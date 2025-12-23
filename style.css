@@ -265,3 +265,270 @@ img{
     height: 170px;
     width: 100%;
 }
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    overflow-y: scroll;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    height: auto;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 3.5rem;
+    padding: 15px;
+    justify-content: space-between;
+    background-color: white;
+    margin: 0;
+    border-bottom: 2px solid #000;
+    box-sizing: border-box;
+}
+
+header h2{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #333333;
+}
+
+.signUp-btn{
+    width: 80px;
+    height: 30px;
+    padding: 5px 8px;
+    background-color: rgb(40, 40, 221);
+    color: #fff;
+    border: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    border-radius: 15px;
+    border: none;
+}
+
+section{
+    padding: 10px;
+    margin-top: 8px;
+    width: 95%;
+}
+
+.upper-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-section p{
+    color: #1e1e1e;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.upper-section p span{
+    color: rgb(44, 44, 238);
+}
+
+.input-section{
+    margin-top: 5px;
+    display: flex;
+    gap: 20px;
+}
+
+.input-section input{
+    width: 200px;
+    padding: 5px;
+    font-size: 0.9rem;
+    color: #1e1e1e;
+    border: 3px solid #908f8fda;
+    border-radius: 8px;
+}
+
+.image-cards{
+    text-align: center;
+    margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.first-card{
+    height: 220px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.first-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.upper-img{
+    border-radius: 8px;
+}
+
+.upper-small-img{
+    height: 220px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+.img-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-card{
+    background-color: #1e1e1e;
+    width: 200px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: #b6b6b6;
+}
+
+.mid-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.mid-section h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.tray-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #908f8fda;
+    width: 50%;
+    margin: 0;
+    border-radius: 10px;
+    padding-right: 2px;
+}
+
+.subtray{
+    width: 650px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.item-logo{
+    height:70px;
+    width: 70px;
+    border-radius: 9px;
+    margin: 0;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 15px;
+}
+
+.item-1{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.item-1 p{
+    width: 80px;
+    font-size: 0.9rem;
+}
+
+.content{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.lower-section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border: 2px solid #dcdcdcda;
+    border-radius: 10px;
+}
+
+.lower-section h3{
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #1e1e1e;
+}
+
+.places-cards{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.place-card{
+    width: 330px;
+    height: 300px;
+    border: 2px solid #908f8fda;
+    border-radius: 8px;
+}
+
+.place-card p{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.place-card button{
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    font-weight: 600;
+    color: rgb(44, 44, 238);
+}
+
+.img-container{ 
+    position: relative;
+    background-color: #908f8fda;
+    height: 170px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img{
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    height: 170px;
+    width: 100%;
+}
