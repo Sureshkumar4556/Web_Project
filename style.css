@@ -177,6 +177,7 @@ section{
     align-items: start;
     justify-content: center;
     padding: 15px;
+    border: 1px solid #908f8fda;
 }
 
 .item-1{
