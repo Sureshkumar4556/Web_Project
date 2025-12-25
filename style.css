@@ -11,8 +11,6 @@ html, body{
     background-color: white;
     align-items: center;
     justify-content: center;
-    display: flex;
-    flex-direction: column;
     min-height: 100%;
     height: auto;
     overflow-y: auto;
@@ -235,7 +233,8 @@ section{
 
 .item-1 p{
     width: 80px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    margin-top: 5px;
 }
 
 .content{
@@ -272,6 +271,10 @@ section{
     height: 300px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.place-card button{
+    cursor: pointer;
 }
 
 .place-card p{
