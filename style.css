@@ -65,6 +65,7 @@ ul a:hover{
 
 .description{
     color: #1e1e1e;
+    opacity: 0.6;
 }
 
 .upper-section{
@@ -325,6 +326,10 @@ ul a:hover{
 @media (max-width: 780px){
     .menu-toggle{
         display: block;
+    }
+
+    .main-container{
+        width: 100%;
     }
 
     nav ul{
