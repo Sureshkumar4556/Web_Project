@@ -23,6 +23,13 @@ nav{
     padding:  0 15px;
 }
 
+.company-logo{
+    height: 90px;
+    width: 150px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
 nav ul{
     display: flex;
     list-style: none;
