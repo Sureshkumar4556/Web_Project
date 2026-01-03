@@ -202,8 +202,8 @@ ul a:hover{
 .tray {
   position: fixed;
   top: 0;
-  right: -70%;       /* Hidden initially */
-  width: 70%;        /* 70% of screen */
+  right: -30%;       /* Hidden initially */
+  width: 30%;        /* 70% of screen */
   height: 100%;
   background: #fff;
   color: #000;
@@ -211,6 +211,7 @@ ul a:hover{
   display: flex;
   flex-direction: column;
   z-index: 1000;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
 /* Tray Open State */
@@ -223,7 +224,7 @@ ul a:hover{
   display: flex;
   align-items: center;
   padding: 15px;
-  border-bottom: 1px solid #444;
+  justify-content: space-between;
   background: #f9f9f9;
 }
 
@@ -264,11 +265,59 @@ ul a:hover{
 }
 
 .logo-item-side{
+   display: flex;
+   align-items: start;
+   border: none;
+}
+
+.logo-item-side p{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.side-content{
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+
+.item{
+    display: flex;
     align-items: center;
-    width: 100px;
-    margin-right: 15px;
+    position: relative;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.item:hover{
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.text{
+    width: auto;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item p{
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.item img{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Search Icon */
@@ -292,7 +341,6 @@ ul a:hover{
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 18px;
-  border-bottom: 1px solid #444;
   padding-bottom: 5px;
 }
 
