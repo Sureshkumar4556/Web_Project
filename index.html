@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Sirohi Finder | One Search. All Services</title>
 </head>
@@ -14,10 +17,10 @@
             <img src="WhatsApp_Image_2026-01-02_at_3.57.34_PM-removebg-preview.png" class="company-logo" alt="">
             <ul>
                 <a href="#">Home</a>
-                <a href="#">Categories</a>
                 <a href="#">Places</a>
                 <a href="#">About Us</a>
                 <a href="#">Contact Us</a>
+                <a href="Login.html" class="btn login" target="_blank">Login</a>
             </ul>
             <div class="menu-toggle">&#9776;</div>
         </nav>
@@ -41,8 +44,8 @@
                     </p>
 
                     <div class="buttons">
-                        <a href="#" class="btn login">Login</a>
-                        <a href="#" class="btn signup">Sign Up</a>
+
+
                     </div>
                 </section>
             </div>
@@ -140,8 +143,58 @@
                         <div class="logo-name">Courier & Logistics</div>
                     </div>
                     <div class="logo-item">
-                        <img src="add.png" alt="More" class="logo">
+                        <img src="add.png" alt="More" class="logo" id="more">
                         <div class="logo-name">More</div>
+                    </div>
+                    <div id="tray" class="tray">
+
+                        <!-- Tray Header -->
+                        <div class="tray-header">
+                            <!-- Close Arrow -->
+                            <i id="closeTray" class="fas fa-arrow-right close-arrow"></i>
+
+                            <!-- Logo + Search -->
+                            <div class="logo-search-container">
+                                <!-- Logo -->
+
+                                <!-- Search bar -->
+                                <div class="search-container">
+                                    <input type="text" placeholder="Search categories...">
+                                    <i class="fas fa-search search-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tray Content -->
+                        <div class="tray-content">
+                            <h3>More Categories</h3>
+                            <div class="tray-more-items">
+                                <div class="logo-item-side">
+                                    <img src="car-rental.png" alt="Car Rental" class="logo">
+                                    <div class="logo-name">Car Rentals</div>
+                                </div>
+                                <div class="logo-item-side">
+                                    <img src="event-planning.png" alt="Event Planning" class="logo">
+                                    <div class="logo-name">Event Planning</div>
+                                </div>
+                                <div class="logo-item-side">
+                                    <img src="photography.png" alt="Photography" class="logo">
+                                    <div class="logo-name">Photography</div>
+                                </div>
+                                <div class="logo-item-side">
+                                    <img src="travel-agency.png" alt="Travel Agency" class="logo">
+                                    <div class="logo-name">Travel Agencies</div>
+                                </div>
+                                <div class="logo-item-side">
+                                    <img src="pet-care.png" alt="Pet Care" class="logo">
+                                    <div class="logo-name">Pet Care</div>
+                                </div>
+                                <div class="logo-item-side">
+                                    <img src="cleaning-service.png" alt="Cleaning Service" class="logo">
+                                    <div class="logo-name">Cleaning Services</div>
+                                </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -155,7 +208,8 @@
                     </div>
                     <div class="text-area">
                         <p>Pawapuri Jain Tirth</p>
-                        <a href="#" class="explore-btn">Explore <img src="right-arrow.png" alt="" class="right-arrow"></a>
+                        <a href="#" class="explore-btn">Explore <img src="right-arrow.png" alt=""
+                                class="right-arrow"></a>
                     </div>
                 </div>
                 <div class="img-card">
@@ -164,7 +218,8 @@
                     </div>
                     <div class="text-area">
                         <p>Sirohi Fort</p>
-                        <a href="#" class="explore-btn">Explore <img src="right-arrow.png" alt="" class="right-arrow"></a>
+                        <a href="#" class="explore-btn">Explore <img src="right-arrow.png" alt=""
+                                class="right-arrow"></a>
                     </div>
                 </div>
                 <div class="img-card">
@@ -173,7 +228,8 @@
                     </div>
                     <div class="text-area">
                         <p>Nakki Lake</p>
-                        <a href="#" class="explore-btn">Explore <img src="right-arrow.png" alt="" class="right-arrow"></a>
+                        <a href="#" class="explore-btn">Explore <img src="right-arrow.png" alt=""
+                                class="right-arrow"></a>
                     </div>
                 </div>
                 <div class="img-card">
@@ -182,7 +238,8 @@
                     </div>
                     <div class="text-area">
                         <p>Guru Shikhar</p>
-                        <a href="#" class="explore-btn">Explore <img src="right-arrow.png" alt="" class="right-arrow"></a>
+                        <a href="#" class="explore-btn">Explore <img src="right-arrow.png" alt=""
+                                class="right-arrow"></a>
                     </div>
                 </div>
             </div>
@@ -191,11 +248,12 @@
     <script>
         const menu = document.querySelector(".menu-toggle");
         const navLinks = document.querySelector("nav ul");
-        
-        menu.addEventListener("click", () =>{
+
+        menu.addEventListener("click", () => {
             navLinks.classList.toggle("active");
         });
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    border-radius: 12px;
+    width: 850px;
+    max-width: 100%;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Forms */
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.sign-up-container {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+}
+
+.container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+form {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+span {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+/* Social Icons */
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fa-google { color: #DB4437; }
+.fa-facebook-f { color: #1877F2; }
+.fa-twitter { color: #1DA1F2; }
+.fa-github { color: #333; }
+.fa-linkedin-in { color: #0A66C2; }
+
+.social-icons i {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+
+.social-icons i:hover {
+    background: #512da8;
+    color: white;
+}
+
+/* Input Box */
+.input-box {
+    width: 100%;
+    background: #f0f0f0;
+    margin: 8px 0;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.input-box i {
+    color: #555;
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 12px;
+    width: 100%;
+}
+
+/* Forgot Password */
+.forgot {
+    font-size: 13px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #512da8;
+}
+
+/* Buttons */
+button {
+    border-radius: 20px;
+    border: none;
+    padding: 12px 45px;
+    background: #512da8;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button.ghost {
+    background: transparent;
+    border: 1px solid white;
+}
+
+/* Overlay */
+.overlay-container {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.container.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+}
+
+.overlay {
+    background: linear-gradient(to right, #5c6bc0, #512da8);
+    color: white;
+    position: relative;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+.overlay-panel {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.overlay-right {
+    right: 0;
+}
