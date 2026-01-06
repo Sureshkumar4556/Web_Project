@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4e2e2;
+}
+
+nav{
+    position: sticky;
+    background-color: #fff;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  0 15px;
+}
+
+.company-logo{
+    height: 90px;
+    width: 150px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+ul a{
+    text-decoration: none;
+    margin-right: 12px;
+    color: #1e1e1e;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+ul a:hover{
+    background-color: #e6e5e5;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.main-container{
+    width: 93%;
+    background-color: #fff;
+}
+
+.gym-page{
+    padding: 40px;
+    width: 100%;
+    background-color: #0063cd;
+}
+
+.gym-header{
+    margin-bottom: 35px;
+}
+
+.gym-header h1{
+    font-size: 32px;
+    margin-bottom: 6px;
+    color: #fff;
+}
+
+.gym-header p{
+    color: #f9f9f9;
+}
+
+.gym-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.gym-card{
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.gym-card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.gym-info{
+    padding: 18px;
+}
+
+.gym-info h3{
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.gym-info span{
+    font-size: 14px;
+    color: #555;
+}
+
+.gym-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}

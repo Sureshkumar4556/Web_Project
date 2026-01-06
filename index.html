@@ -65,7 +65,7 @@
             <div class="logo-items">
                 <div class="tray-one">
                     <div class="logo-item">
-                        <img src="weightlifting.png" alt="GYM" class="logo">
+                        <img src="weightlifting.png" alt="GYM" class="logo" onclick="openGymPage()">
                         <div class="logo-name">GYM</div>
                     </div>
                     <div class="logo-item">
@@ -230,7 +230,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -289,6 +288,10 @@
         menu.addEventListener("click", () => {
             navLinks.classList.toggle("active");
         });
+
+        function openGymPage(){
+            window.open("gyms.html", "_blank");
+        }
     </script>
     <script src="script.js?v=2"></script>
 </body>
