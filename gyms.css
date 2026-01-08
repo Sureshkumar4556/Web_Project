@@ -89,6 +89,7 @@ ul a:hover{
     .gym-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;}
 
     .gym-card{
+        cursor: pointer;
       background:#fff;
       border:1px solid #ddd;
       border-radius:14px;
