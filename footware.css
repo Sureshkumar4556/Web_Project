@@ -1,0 +1,167 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
+    body{background:#f2f4f8;color:#222}
+
+    nav{
+    position: sticky;
+    background-color: #fff;
+    background: transparent;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  0 15px;
+    width: 100%;
+    border-bottom: 2px solid #333;
+}
+
+.company-logo{
+    height: 90px;
+    width: 150px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.login{
+    cursor: pointer;
+    border: 0;
+    transition: all 0.3s ease;
+}
+
+.btn{
+    margin-top: 0;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #017cff;
+    color: #f9f9f9;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: 0.4s;
+    border: 2px solid transparent;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+    margin-right: 12px;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu-toggle{
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+ul a:hover{
+    background-color: #e6e5e5;
+    color: #333;
+}
+
+    .container{max-width: 93%;margin:35px auto;margin-top: 0;padding:0 16px;background-color: #fff;}
+    h1{margin-bottom:18px;font-size:28px;margin-top: 20px;}
+
+    /* CATEGORY BAR (DESIGN CHANGE) */
+    .categories{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+      gap:14px;
+      margin-bottom:30px;
+    }
+    .category-btn{
+      padding:14px 10px;
+      border-radius:14px;
+      border:none;
+      background:#fff;
+      cursor:pointer;
+      font-size:14px;
+      font-weight:600;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:6px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.06);
+      transition:0.3s;
+    }
+    .category-btn i{font-size:20px;color:#ff7a00}
+    .category-btn.active,
+    .category-btn:hover{background:#ff7a00;color:#fff}
+    .category-btn.active i,
+    .category-btn:hover i{color:#fff}
+
+    /* SHOP GRID (CARD DESIGN CHANGED) */
+    .shop-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+
+    .shop-card{
+      background:#fff;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 10px 28px rgba(0,0,0,0.08);
+      transition:0.3s;
+      position:relative;
+    }
+    .shop-card:hover{transform:translateY(-6px)}
+
+    .shop-img img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
+      display:block;
+    }
+    .shop-img{
+      height:180px;
+      background:linear-gradient(135deg,#ff7a00,#ffb347);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-size:18px;
+      font-weight:bold;
+    }
+
+    .badge{
+      position:absolute;
+      top:14px;
+      left:14px;
+      background:#000;
+      color:#fff;
+      font-size:12px;
+      padding:5px 10px;
+      border-radius:20px;
+    }
+
+    .shop-body{padding:16px}
+    .shop-body h3{margin-bottom:6px;font-size:19px}
+    .rating{font-size:14px;color:#ff7a00;margin-bottom:6px}
+    .address{font-size:14px;color:#555;margin-bottom:12px}
+
+    .footer{
+      display:flex;
+      gap:10px;
+    }
+    .btn{
+      flex:1;
+      padding:10px;
+      border-radius:10px;
+      border:none;
+      cursor:pointer;
+      font-size:14px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:6px;
+      color: #333;
+      background:#f1f1f1;
+    }
+    .btn.call{background:#ff7a00;color:#fff}
+
+    @media(max-width:600px){
+      h1{text-align:center}
+    }

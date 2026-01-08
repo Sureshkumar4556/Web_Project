@@ -18,8 +18,8 @@
             <ul>
                 <a href="#">Home</a>
                 <a href="#">Places</a>
-                <a href="#">About Us</a>
-                <a href="#">Contact Us</a>
+                <a href="aboutPage.html">About Us</a>
+                <a href="contactPage.html">Contact Us</a>
                 <a href="Login.html" class="btn login" target="_blank">Login</a>
             </ul>
             <div class="menu-toggle">&#9776;</div>
@@ -73,11 +73,11 @@
                         <div class="logo-name">Hospitals</div>
                     </div>
                     <div class="logo-item">
-                        <img src="mentoring.png" alt="Coaching" class="logo">
+                        <img src="mentoring.png" alt="Coaching" class="logo" onclick="openCoachingPage()">
                         <div class="logo-name">Coaching Centers</div>
                     </div>
                     <div class="logo-item">
-                        <img src="shoes (1).png" alt="Footware" class="logo">
+                        <img src="shoes (1).png" alt="Footware" class="logo" onclick="openFootwarePage()">
                         <div class="logo-name">Footware Shops</div>
                     </div>
                     <div class="logo-item">
@@ -291,6 +291,14 @@
 
         function openGymPage(){
             window.open("gyms.html", "_blank");
+        }
+
+        function openFootwarePage(){
+            window.open("footware.html", "_blank");
+        }
+
+        function openCoachingPage(){
+            window.open("coaching.html", "_blank");
         }
 
         function openHospitalPage(){
