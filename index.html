@@ -7,6 +7,7 @@
     <link rel="stylesheet"
         href="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css?v=2">
     <title>Sirohi Finder | One Search. All Services</title>
 </head>
@@ -16,8 +17,8 @@
         <nav>
             <img src="WhatsApp_Image_2026-01-02_at_3.57.34_PM-removebg-preview.png" class="company-logo" alt="">
             <ul>
-                <a href="#">Home</a>
-                <a href="#">Places</a>
+                <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+                <a href="places.html">Places</a>
                 <a href="aboutPage.html">About Us</a>
                 <a href="contactPage.html">Contact Us</a>
                 <a href="Login.html" class="btn login" target="_blank">Login</a>
@@ -26,38 +27,54 @@
         </nav>
 
         <section class="upper-section">
-            <div class="intro-container">
-                <section class="intro">
-                    <div class="overlay"></div>
-                    <div class="content">
-                        <h1 class="title">Welcome to Sirohi</h1>
-                        <p class="subtitle">Explore Nature, Culture & Heritage</p>
-                    </div>
-                    <p class="description">
-                        Sirohi, the land of hills and heritage, is a hidden gem of Rajasthan. Surrounded by the
-                        Aravalli range, it offers breathtaking landscapes, peaceful temples, and a rich cultural
-                        history.
-                    </p>
-                    <p class="description">
-                        From the spiritual vibes of Mount Abu to the royal forts, wildlife, and traditional Rajasthani
-                        hospitality - Sirohi promises an unforgettable journey for every traveler.
-                    </p>
-
-                    <div class="buttons">
-
-
-                    </div>
-                </section>
+            <div class="sirohi-intro">
+                <h1>Welcome to Sirohi Finder</h1>
+                <p>Your one-stop solution to find the best services and places in Sirohi city. Explore gyms, hospitals,
+                    coaching centers, footware shops, and much more with just a click!</p>
             </div>
-            <div class="upper-img-container">
-                <div class="upper-imgs">
-                    <div class="imgs-first"><img src="udaipur-slide-c_1659103572.jpg" alt=""></div>
-                    <div class="imgs"><img src="lvqq7ld93b3o8zr4uowdwcvh8f7f_shutterstock_776727103.avif" alt=""></div>
-                    <div class="imgs"><img src="z1ra4dkmajd2p0z7pikekcylke8k_gadisar lake2.avif" alt=""></div>
-                    <div class="imgs"><img src="42.jpg" alt=""></div>
-                    <div class="imgs"><img src="1605611613_shutterstock_1673695396.avif" alt=""></div>
+            <!-- IMAGE SLIDER -->
+            <!-- SPLIT SLIDER SECTION -->
+            <section class="hero-split">
+
+                <!-- LEFT : SLIDER -->
+                <div class="hero-left">
+                    <div class="slider">
+                        <img src="https://peopleplaces.in/wp-content/uploads/2023/03/Sirohi-Explore-The-Hidden-Gems-Of-Rajasthans-Scenic-Beauty-1024x576.jpg"
+                            class="slide active">
+                        <img src="https://experiencemyindia.com/wp-content/uploads/2024/12/Mount-Abu.jpg" class="slide">
+                        <img src="https://www.tusktravel.com/blog/wp-content/uploads/2022/12/temples-of-Dilwara-1.jpg"
+                            class="slide">
+                        <img src="https://th.bing.com/th/id/R.50c412e7eda495c10cd285db65cdda0b?rik=kf%2bDBGjfTMCpFQ&riu=http%3a%2f%2fwww.manahotels.in%2ftraveller%2fwp-content%2fuploads%2f2014%2f07%2fDilwara-Jain-Temples-Mount-Abu1.jpg&ehk=t%2fDvP7mQGhX%2fZ7kxZjWteSU9iod%2bphHMcRk7bSp9q%2bk%3d&risl=&pid=ImgRaw&r=0"
+                            alt="">
+                        <img src="https://i.ytimg.com/vi/PuzG3THG3V8/maxresdefault.jpg" alt="">
+                        <button class="prev" onclick="prevSlide()">❮</button>
+                        <button class="next" onclick="nextSlide()">❯</button>
+                    </div>
                 </div>
-            </div>
+
+                <!-- RIGHT : CONTENT -->
+                <div class="hero-right">
+                    <h1>Explore Sirohi</h1>
+                    <p>
+                        Discover the beauty of Sirohi – from the peaceful
+                        hills of Mount Abu to ancient temples, forts, and
+                        rich cultural heritage.
+                    </p>
+
+                    <ul class="hero-features">
+                        <li><i class="fa-solid fa-mountain"></i> Hill Station</li>
+                        <li><i class="fa-solid fa-landmark"></i> Historic Temples</li>
+                        <li><i class="fa-solid fa-tree"></i> Natural Beauty</li>
+                    </ul>
+
+                    <a href="#places" class="hero-btn">
+                        Explore Places <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </section>
+
+
         </section>
 
         <section class="mid-section">
@@ -235,83 +252,150 @@
                 </div>
             </div>
         </section>
-        <section class="lower-section">
-            <h3>Explore Best Tourist Places <span>New</span></h3>
-            <div class="lower-img-cards">
-                <div class="img-card">
-                    <div class="image">
-                        <img src="OIP.webp" alt="">
-                    </div>
-                    <div class="text-area">
-                        <p>Pawapuri Jain Tirth</p>
-                        <a href="https://en.wikipedia.org/wiki/Shree_Pavapuri_Tirth_Dham" class="explore-btn">Explore
-                            <img src="right-arrow.png" alt="" class="right-arrow"></a>
-                    </div>
+        <!-- BEST PLACES SECTION -->
+        <!-- BEST PLACES SECTION -->
+        <section class="best-places">
+            <h2>Best Places in Sirohi</h2>
+
+            <div class="place-item">
+                <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2024/12/20141635/Mount-Abu-Rajasthan-5.jpg"
+                    alt="Mount Abu">
+                <div class="place-info">
+                    <h3>Mount Abu</h3>
+                    <p>
+                        Mount Abu is the only hill station in Rajasthan,
+                        famous for its cool climate, green landscapes,
+                        and the beautiful Dilwara Jain Temples.
+                    </p>
+                    <a href="mountAbuExp.html" class="explore-btn">
+                        Explore <i class="fa-solid fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="img-card">
-                    <div class="image">
-                        <img src="658aa793656cba4566d0847e.avif" alt="">
-                    </div>
-                    <div class="text-area">
-                        <p>Sirohi Fort</p>
-                        <a href="https://en.wikipedia.org/wiki/Sirohi_district" class="explore-btn">Explore <img
-                                src="right-arrow.png" alt="" class="right-arrow"></a>
-                    </div>
+            </div>
+
+            <div class="place-item">
+                <img src="https://www.rajasthantoursoperatorindia.com/images/destination/mount-abu/slide.jpg"
+                    alt="Dilwara Jain Temple">
+                <div class="place-info">
+                    <h3>Dilwara Jain Temple</h3>
+                    <p>
+                        The Dilwara Jain Temples are known for their
+                        stunning white marble carvings and peaceful
+                        spiritual atmosphere.
+                    </p>
+                    <a href="dilwara-temple.html" class="explore-btn">
+                        Explore <i class="fa-solid fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="img-card">
-                    <div class="image">
-                        <img src="qjkipl57tfit7y5mjpwwkkopg6zh_Nakki Lake.avif" alt="">
-                    </div>
-                    <div class="text-area">
-                        <p>Nakki Lake</p>
-                        <a href="https://en.wikipedia.org/wiki/Nakki_Lake" class="explore-btn">Explore <img
-                                src="right-arrow.png" alt="" class="right-arrow"></a>
-                    </div>
-                </div>
-                <div class="img-card">
-                    <div class="image">
-                        <img src="42.jpg" alt="">
-                    </div>
-                    <div class="text-area">
-                        <p>Guru Shikhar</p>
-                        <a href="https://en.wikipedia.org/wiki/Guru_Shikhar" class="explore-btn">Explore <img
-                                src="right-arrow.png" alt="" class="right-arrow"></a>
-                    </div>
+            </div>
+
+            <div class="place-item">
+                <img src="https://i.pinimg.com/originals/f1/12/fe/f112fe9441193800715c7fca30dca555.jpg"
+                    alt="Achalgarh Fort">
+                <div class="place-info">
+                    <h3>Achalgarh Fort</h3>
+                    <p>
+                        Achalgarh Fort is a historic site located in the
+                        Aravalli hills, offering breathtaking sunset
+                        views and rich heritage.
+                    </p>
+                    <a href="achalgarh.html" class="explore-btn">
+                        Explore <i class="fa-solid fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </section>
-        <section>
-            <footer>
-            <div class="footer-inner">
-                <div>
-                    <h4>Explore Sirohi</h4>
-                    <p>Discover temples, culture, heritage, and local life of Sirohi city.</p>
+
+
+        <!-- ABOUT SIROHI SECTION -->
+        <section class="about-sirohi" id="about">
+            <div class="container">
+
+                <div class="about-content">
+                    <h2>About Sirohi</h2>
+                    <p>
+                        Sirohi is a picturesque district located in the southwestern part of Rajasthan, India.
+                        Known for its rich heritage, scenic Aravalli hills, and historic architecture,
+                        Sirohi offers travelers a perfect blend of nature, culture, and history.
+                    </p>
+                    <p>
+                        The region is famous for the hill station of Mount Abu, the serene Dilwara Jain Temples,
+                        and historic forts like Achalgarh. Visitors can explore beautiful landscapes,
+                        enjoy trekking trails, and immerse themselves in the local Rajasthani culture.
+                    </p>
+                    <p>
+                        Sirohi is also known for its traditional handicrafts, vibrant festivals, and warm hospitality.
+                        Whether you are a history enthusiast, nature lover, or spiritual seeker, Sirohi has something
+                        special to offer.
+                    </p>
+
+                    <a href="#places" class="learn-more-btn">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div>
+
+                <div class="about-image">
+                    <img src="https://www.holidify.com/images/bgImages/UDAIPUR.jpg" alt="Sirohi Scenic View">
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <div class="footer-container">
+
+                <!-- ABOUT / BRAND -->
+                <div class="footer-about">
+                    <h3>Sirohi Tourism</h3>
+                    <p>Discover the beauty, culture, and heritage of Sirohi. Explore historic temples, forts, and scenic
+                        hills.</p>
+                </div>
+
+                <!-- QUICK LINKS -->
+                <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li>Home</li>
-                        <li>About Sirohi</li>
-                        <li>Blogs</li>
-                        <li>Contact</li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#places">Places</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4>Contact</h4>
-                    <p>Sirohi, Rajasthan<br>support@exploresirohi.com</p>
+
+                <!-- EXPLORE -->
+                <div class="footer-explore">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#mountabu">Mount Abu</a></li>
+                        <li><a href="#dilwara">Dilwara Temple</a></li>
+                        <li><a href="#achalgarh">Achalgarh Fort</a></li>
+                        <li><a href="#other">Other Places</a></li>
+                    </ul>
                 </div>
+
+                <!-- FOLLOW US -->
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
             </div>
-            <div class="footer-bottom">© 2026 Explore Sirohi. All rights reserved.</div>
+
+            <!-- COPYRIGHT -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sirohi Tourism. All rights reserved.</p>
+            </div>
         </footer>
-        </section>
+
     </div>
     <script>
-        const menu = document.querySelector(".menu-toggle");
-        const navLinks = document.querySelector("nav ul");
-
-        menu.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
-        });
 
         function openGymPage() {
             window.open("gyms.html", "_blank");
@@ -328,6 +412,25 @@
         function openHospitalPage() {
             window.open("hospitals.html", "_blank");
         }
+        let slides = document.querySelectorAll(".slide");
+        let index = 0;
+
+        function showSlide(i) {
+            slides.forEach(slide => slide.classList.remove("active"));
+            slides[i].classList.add("active");
+        }
+
+        function nextSlide() {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        }
+
+        function prevSlide() {
+            index = (index - 1 + slides.length) % slides.length;
+            showSlide(index);
+        }
+
+        setInterval(nextSlide, 4000);
     </script>
     <script src="script.js?v=2"></script>
 </body>
