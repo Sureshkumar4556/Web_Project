@@ -1,0 +1,123 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',Arial,sans-serif}
+body{background:#0b0f14;color:#e5e7eb}
+
+.container{max-width:1400px;margin:40px auto;padding:0 20px}
+h1{font-size:34px;margin-bottom:6px}
+.subtitle{color:#9ca3af;margin-bottom:34px}
+
+/* CATEGORY BAR – GARAGE STYLE */
+.categories{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:38px}
+.category-btn{
+  background:#111827;
+  border:1px solid #374151;
+  color:#e5e7eb;
+  padding:14px 22px;
+  border-radius:8px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:14px;
+  font-weight:600;
+  transition:0.3s;
+}
+.category-btn i{color:#facc15}
+.category-btn.active,
+.category-btn:hover{background:#facc15;color:#111827;border-color:#facc15}
+.category-btn.active i,
+.category-btn:hover i{color:#111827}
+
+/* SHOP GRID – MECHANIC CARD DESIGN */
+.shop-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+  gap:28px;
+}
+
+.shop-card{
+  background:#111827;
+  border:1px solid #374151;
+  border-radius:14px;
+  overflow:hidden;
+  transition:0.35s;
+  position:relative;
+}
+.shop-card:hover{transform:translateY(-6px);border-color:#facc15}
+
+.shop-img{
+  height:170px;
+  background:linear-gradient(135deg,#facc15,#eab308);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#111827;
+  font-size:20px;
+  font-weight:800;
+  letter-spacing:0.5px;
+}
+
+.badge{
+  position:absolute;
+  top:14px;
+  right:14px;
+  background:#111827;
+  color:#facc15;
+  font-size:12px;
+  padding:6px 12px;
+  border-radius:20px;
+  font-weight:700;
+  border:1px solid #374151;
+}
+
+.shop-body{padding:18px}
+.shop-body h3{font-size:20px;margin-bottom:6px}
+.rating{font-size:14px;color:#facc15;margin-bottom:6px}
+.address{font-size:14px;color:#d1d5db;margin-bottom:8px}
+.services{font-size:13px;color:#9ca3af;margin-bottom:14px}
+
+.actions{display:flex;gap:12px}
+.btn{
+  flex:1;
+  padding:11px;
+  border-radius:8px;
+  border:1px solid #374151;
+  background:#0b0f14;
+  color:#e5e7eb;
+  cursor:pointer;
+  font-size:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  transition:0.3s;
+}
+.btn.call{background:#facc15;color:#111827;border-color:#facc15}
+
+/* FOOTER */
+.footer{margin-top:70px;background:#020617}
+.footer-container{
+  max-width:1400px;
+  margin:auto;
+  padding:44px 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:32px;
+}
+.footer h3,.footer h4{color:#facc15;margin-bottom:14px}
+.footer p,.footer li{font-size:14px;color:#9ca3af;line-height:1.6}
+.footer ul{list-style:none}
+.footer ul li{margin-bottom:8px}
+
+.footer-bottom{
+  background:#000;
+  text-align:center;
+  padding:14px;
+  font-size:13px;
+  color:#6b7280;
+}
+
+@media(max-width:600px){
+  h1,.subtitle{text-align:center}
+  .categories{justify-content:center}
+  .footer-container{text-align:center}
+}

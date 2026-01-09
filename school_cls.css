@@ -1,0 +1,101 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
+body{background:#f0f9ff;color:#0f172a}
+
+.container{max-width:1400px;margin:40px auto;padding:0 20px}
+h1{font-size:34px;margin-bottom:6px}
+.subtitle{color:#475569;margin-bottom:36px}
+
+/* CATEGORY TABS – EDUCATION STYLE */
+.categories{
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px;
+  margin-bottom:40px;
+}
+.category-btn{
+  background:#ffffff;
+  border:2px dashed #38bdf8;
+  padding:14px 24px;
+  border-radius:30px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:15px;
+  font-weight:600;
+  color:#0369a1;
+  transition:0.3s;
+}
+.category-btn i{color:#0284c7}
+.category-btn.active,
+.category-btn:hover{background:#0284c7;color:#fff;border-style:solid}
+.category-btn.active i,
+.category-btn:hover i{color:#fff}
+
+/* SCHOOL / COLLEGE GRID */
+.shop-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+  gap:30px;
+}
+
+.shop-card{
+  background:#ffffff;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 18px 40px rgba(2,132,199,0.15);
+  transition:0.35s;
+  position:relative;
+}
+.shop-card:hover{transform:translateY(-8px)}
+
+.shop-img{
+  height:170px;
+  background:linear-gradient(135deg,#38bdf8,#0ea5e9);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#ffffff;
+  font-size:22px;
+  font-weight:800;
+}
+
+.badge{
+  position:absolute;
+  top:14px;
+  right:14px;
+  background:#ffffff;
+  color:#0284c7;
+  font-size:12px;
+  padding:6px 14px;
+  border-radius:20px;
+  font-weight:700;
+}
+
+.shop-body{padding:18px}
+.shop-body h3{font-size:21px;margin-bottom:6px}
+.rating{font-size:14px;color:#0284c7;margin-bottom:6px}
+.address{font-size:14px;color:#475569;margin-bottom:8px}
+.courses{font-size:13px;color:#334155;margin-bottom:14px}
+
+.actions{display:flex;gap:12px}
+.btn{
+  flex:1;
+  padding:11px;
+  border-radius:10px;
+  border:1px solid #bae6fd;
+  background:#f0f9ff;
+  cursor:pointer;
+  font-size:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  transition:0.3s;
+}
+.btn.call{background:#0284c7;color:#fff;border-color:#0284c7}
+
+@media(max-width:600px){
+  h1,.subtitle{text-align:center}
+  .categories{justify-content:center}
+}

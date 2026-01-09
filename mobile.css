@@ -1,0 +1,92 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',Arial,sans-serif}
+body{background:#0f172a;color:#e5e7eb}
+
+.container{max-width:1400px;margin:40px auto;padding:0 18px}
+h1{margin-bottom:8px;font-size:32px}
+.subtitle{color:#94a3b8;margin-bottom:26px}
+
+/* CATEGORY BAR – DARK TECH DESIGN */
+.categories{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:34px}
+.category-btn{
+  padding:12px 20px;
+  border-radius:30px;
+  border:1px solid #334155;
+  background:#020617;
+  color:#e5e7eb;
+  cursor:pointer;
+  font-size:14px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  transition:0.3s;
+}
+.category-btn i{color:#38bdf8}
+.category-btn.active,
+.category-btn:hover{background:#38bdf8;color:#020617;border-color:#38bdf8}
+.category-btn.active i,
+.category-btn:hover i{color:#020617}
+
+/* SHOP GRID – DIFFERENT CARD DESIGN */
+.shop-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px}
+
+.shop-card{
+  background:#020617;
+  border:1px solid #1e293b;
+  border-radius:18px;
+  overflow:hidden;
+  transition:0.35s;
+  position:relative;
+}
+.shop-card:hover{transform:translateY(-6px);border-color:#38bdf8}
+
+.shop-img{
+  height:150px;
+  background:linear-gradient(135deg,#38bdf8,#0ea5e9);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#020617;
+  font-weight:700;
+  font-size:18px;
+}
+
+.badge{
+  position:absolute;
+  top:12px;
+  right:12px;
+  background:#38bdf8;
+  color:#020617;
+  font-size:11px;
+  padding:5px 10px;
+  border-radius:20px;
+  font-weight:700;
+}
+
+.shop-body{padding:14px}
+.shop-body h3{font-size:17px;margin-bottom:4px}
+.rating{font-size:13px;color:#38bdf8;margin-bottom:4px}
+.address{font-size:13px;color:#cbd5f5;margin-bottom:8px}
+.brands{font-size:12px;color:#94a3b8;margin-bottom:12px}
+
+.actions{display:flex;gap:10px}
+.btn{
+  flex:1;
+  padding:9px;
+  border-radius:10px;
+  border:1px solid #334155;
+  background:#020617;
+  color:#e5e7eb;
+  cursor:pointer;
+  font-size:13px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+}
+.btn.call{background:#38bdf8;color:#020617;border:none}
+
+@media(max-width:600px){
+  h1{text-align:center}
+  .subtitle{text-align:center}
+  .categories{justify-content:center}
+}

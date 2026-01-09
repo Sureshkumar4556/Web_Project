@@ -1,0 +1,121 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',Arial,sans-serif}
+body{background:#fff1f2;color:#3f1d2f}
+
+.container{max-width:1400px;margin:40px auto;padding:0 20px}
+h1{font-size:34px;margin-bottom:6px}
+.subtitle{color:#9f1239;margin-bottom:36px}
+
+/* CATEGORY PILLS – BEAUTY STYLE */
+.categories{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:38px}
+.category-btn{
+  background:#ffffff;
+  border:2px solid #f9a8d4;
+  padding:14px 24px;
+  border-radius:30px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:15px;
+  font-weight:600;
+  color:#9d174d;
+  transition:0.3s;
+}
+.category-btn i{color:#ec4899}
+.category-btn.active,
+.category-btn:hover{background:#ec4899;color:#fff;border-color:#ec4899}
+.category-btn.active i,
+.category-btn:hover i{color:#fff}
+
+/* SPA CARD GRID */
+.shop-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+  gap:30px;
+}
+
+.shop-card{
+  background:#ffffff;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 20px 40px rgba(236,72,153,0.18);
+  transition:0.35s;
+  position:relative;
+}
+.shop-card:hover{transform:translateY(-8px)}
+
+.shop-img{
+  height:180px;
+  background:linear-gradient(135deg,#ec4899,#f472b6);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#ffffff;
+  font-size:22px;
+  font-weight:800;
+  letter-spacing:0.5px;
+}
+
+.badge{
+  position:absolute;
+  top:14px;
+  right:14px;
+  background:#ffffff;
+  color:#ec4899;
+  font-size:12px;
+  padding:6px 14px;
+  border-radius:20px;
+  font-weight:700;
+}
+
+.shop-body{padding:18px}
+.shop-body h3{font-size:21px;margin-bottom:6px}
+.rating{font-size:14px;color:#ec4899;margin-bottom:6px}
+.address{font-size:14px;color:#7f1d1d;margin-bottom:8px}
+.services{font-size:13px;color:#9f1239;margin-bottom:14px}
+
+.actions{display:flex;gap:12px}
+.btn{
+  flex:1;
+  padding:11px;
+  border-radius:12px;
+  border:1px solid #fbcfe8;
+  background:#fff5f7;
+  cursor:pointer;
+  font-size:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  transition:0.3s;
+}
+.btn.call{background:#ec4899;color:#fff;border-color:#ec4899}
+
+/* FOOTER */
+.footer{margin-top:70px;background:#831843;color:#fff}
+.footer-container{
+  max-width:1400px;
+  margin:auto;
+  padding:44px 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:32px;
+}
+.footer h3,.footer h4{color:#fbcfe8;margin-bottom:14px}
+.footer p,.footer li{font-size:14px;color:#fde7f3;line-height:1.6}
+.footer ul{list-style:none}
+.footer ul li{margin-bottom:8px}
+
+.footer-bottom{
+  background:#500724;
+  text-align:center;
+  padding:14px;
+  font-size:13px;
+  color:#fbcfe8;
+}
+
+@media(max-width:600px){
+  h1,.subtitle{text-align:center}
+  .categories{justify-content:center}
+  .footer-container{text-align:center}
+}
