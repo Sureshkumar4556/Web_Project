@@ -1,0 +1,217 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins, Arial, sans-serif;
+  }
+  
+  body{
+    background:#fff7ed;
+    color:#7c2d12;
+  }
+  
+  /* HEADER */
+  .shop-header{
+    background:linear-gradient(135deg,#ea580c,#fb923c);
+    padding:40px 20px;
+    color:#fff;
+  }
+  
+  .header-content{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    gap:24px;
+    align-items:center;
+  }
+  
+  .shop-logo{
+    font-size:60px;
+    background:#ffffff40;
+    width:100px;
+    height:100px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:24px;
+  }
+  
+  .shop-info h1{
+    font-size:32px;
+    margin-bottom:6px;
+  }
+  
+  .shop-info p{
+    opacity:.9;
+    margin-bottom:10px;
+  }
+  
+  .rating-badge{
+    background:#fff;
+    color:#ea580c;
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:20px;
+    font-weight:600;
+    margin-bottom:14px;
+  }
+  
+  /* ACTIONS */
+  .actions{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+  
+  .actions button{
+    border:none;
+    padding:10px 18px;
+    border-radius:12px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:6px;
+  }
+  
+  .call{
+    background:#7c2d12;
+    color:#fff;
+  }
+  
+  .whatsapp{
+    background:#22c55e;
+    color:#fff;
+  }
+  
+  .menu{
+    background:#ffedd5;
+    color:#7c2d12;
+  }
+  
+  /* CONTAINER */
+  .container{
+    max-width:1200px;
+    margin:40px auto;
+    padding:0 20px;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:32px;
+  }
+  
+  /* SECTION */
+  .section{
+    background:#fff;
+    padding:22px;
+    border-radius:18px;
+    margin-bottom:26px;
+    box-shadow:0 20px 40px rgba(234,88,12,.15);
+  }
+  
+  .section h2{
+    margin-bottom:12px;
+  }
+  
+  /* GALLERY */
+  .gallery{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+  }
+  
+  .gallery div{
+    height:80px;
+    background:#fed7aa;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:600;
+  }
+  
+  /* REVIEWS */
+  .review{
+    border-bottom:1px solid #fde68a;
+    padding:10px 0;
+  }
+  
+  .stars{
+    color:#facc15;
+  }
+  
+  /* FORM */
+  .review-form input,
+  .review-form textarea{
+    width:100%;
+    padding:10px;
+    border-radius:10px;
+    border:1px solid #fed7aa;
+    margin-bottom:10px;
+  }
+  
+  .review-form textarea{
+    height:90px;
+    resize:none;
+  }
+  
+  .review-form button{
+    background:#ea580c;
+    color:#fff;
+    border:none;
+    padding:10px;
+    border-radius:12px;
+    width:100%;
+  }
+  
+  /* MAP */
+  .map iframe{
+    width:100%;
+    height:220px;
+    border:none;
+    border-radius:14px;
+  }
+  
+  /* FEATURE FOOTER */
+  .feature-footer{
+    background:#7c2d12;
+    color:#fff;
+    padding:50px 20px;
+    text-align:center;
+  }
+  
+  .features{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:24px;
+  }
+  
+  .feature-item{
+    background:#9a3412;
+    padding:24px;
+    border-radius:18px;
+  }
+  
+  .feature-item h3{
+    margin-bottom:8px;
+    color:#ffedd5;
+  }
+  
+  /* FOOTER */
+  footer{
+    background:#431407;
+    color:#fed7aa;
+    text-align:center;
+    padding:14px;
+  }
+  
+  /* RESPONSIVE */
+  @media(max-width:900px){
+    .container{
+      grid-template-columns:1fr;
+    }
+    .gallery{
+      grid-template-columns:repeat(2,1fr);
+    }
+  }
+  

@@ -1,0 +1,158 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
+body{background:#0f172a;color:#e5e7eb}
+
+/* HEADER */
+.shop-header{
+  background:linear-gradient(135deg,#22c55e,#16a34a);
+  padding:40px 20px;
+}
+.header-content{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:120px 1fr;
+  gap:20px;
+  align-items:center;
+}
+.shop-logo{
+  width:120px;height:120px;
+  background:#020617;
+  border-radius:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:42px;
+}
+.shop-info h1{font-size:30px}
+.shop-info p{font-size:14px;margin-top:6px}
+.rating-badge{
+  display:inline-block;
+  background:#fde68a;
+  color:#020617;
+  padding:4px 10px;
+  border-radius:20px;
+  margin-top:8px;
+  font-weight:600;
+}
+
+/* ACTIONS */
+.actions{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+.actions button{
+  padding:10px 16px;
+  border-radius:12px;
+  border:none;
+  cursor:pointer;
+  font-size:14px;
+}
+.call{background:#020617;color:#22c55e}
+.whatsapp{background:#16a34a;color:white}
+.menu{background:white;color:#020617}
+
+/* LAYOUT */
+.container{
+  max-width:1200px;
+  margin:40px auto;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:30px;
+}
+.section{
+  background:#020617;
+  border:1px solid #1e293b;
+  border-radius:18px;
+  padding:25px;
+  margin-bottom:25px;
+}
+.section h2{margin-bottom:14px}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+}
+.gallery div{
+  height:90px;
+  background:#1e293b;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#94a3b8;
+  font-size:12px;
+}
+
+/* ADDRESS UPDATE */
+.address-box textarea{
+  width:100%;
+  padding:10px;
+  border-radius:10px;
+  background:#020617;
+  border:1px solid #334155;
+  color:white;
+  margin-bottom:10px;
+}
+.address-box button{
+  background:#22c55e;
+  border:none;
+  padding:10px;
+  width:100%;
+  border-radius:10px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+/* REVIEWS */
+.review{
+  border-bottom:1px solid #1e293b;
+  padding:10px 0;
+}
+.review:last-child{border:none}
+.review strong{color:#22c55e}
+.stars{color:#facc15}
+
+/* REVIEW FORM */
+.review-form input,
+.review-form textarea{
+  width:100%;
+  padding:10px;
+  margin-bottom:10px;
+  border-radius:10px;
+  background:#020617;
+  border:1px solid #334155;
+  color:white;
+}
+.review-form button{
+  width:100%;
+  background:#22c55e;
+  border:none;
+  padding:10px;
+  border-radius:10px;
+  font-weight:600;
+}
+
+/* MAP */
+.map iframe{
+  width:100%;
+  height:250px;
+  border-radius:14px;
+  border:none;
+}
+
+/* FOOTER */
+footer{
+  background:#020617;
+  border-top:1px solid #1e293b;
+  padding:25px;
+  text-align:center;
+  color:#94a3b8;
+  font-size:13px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .header-content{grid-template-columns:1fr;text-align:center}
+  .actions{justify-content:center}
+  .container{grid-template-columns:1fr}
+}
