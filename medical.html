@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Medical Categories & All Medical Stores | SirohiConnect</title>
@@ -7,448 +8,461 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="medical.css">
 </head>
+
 <body>
 
-<div class="container">
-  <h1>Medical Store Categories</h1>
+  <div class="container">
+    <h1>Medical Store Categories</h1>
 
-  <!-- CATEGORY BUTTONS -->
-  <div class="categories">
-    <button class="category-btn active"><i class="fa-solid fa-layer-group"></i> All</button>
-    <button class="category-btn"><i class="fa-solid fa-capsules"></i> Pharmacy</button>
-    <button class="category-btn"><i class="fa-solid fa-truck-medical"></i> 24x7 Medical</button>
-    <button class="category-btn"><i class="fa-solid fa-vial"></i> Generic Medicine</button>
-    <button class="category-btn"><i class="fa-solid fa-stethoscope"></i> Surgical Items</button>
-    <button class="category-btn"><i class="fa-solid fa-syringe"></i> Medical Equipment</button>
+    <!-- CATEGORY BUTTONS -->
+    <div class="categories">
+      <button class="category-btn active"><i class="fa-solid fa-layer-group"></i> All</button>
+      <button class="category-btn"><i class="fa-solid fa-capsules"></i> Pharmacy</button>
+      <button class="category-btn"><i class="fa-solid fa-truck-medical"></i> 24x7 Medical</button>
+      <button class="category-btn"><i class="fa-solid fa-vial"></i> Generic Medicine</button>
+      <button class="category-btn"><i class="fa-solid fa-stethoscope"></i> Surgical Items</button>
+      <button class="category-btn"><i class="fa-solid fa-syringe"></i> Medical Equipment</button>
+    </div>
+
+    <!-- ALL MEDICAL SHOPS -->
+    <div class="medical-list">
+
+      <div class="medical-card" onclick="showDetails()">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>Sirohi Medical Store</h3>
+          <div class="rating">⭐ 4.6 (540)</div>
+          <div class="address">Main Market, Sirohi</div>
+          <div class="services">Allopathic • Surgical Items</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card" onclick="showDetails()">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>LifeCare Pharmacy</h3>
+          <div class="rating">⭐ 4.4 (380)</div>
+          <div class="address">Abu Road, Sirohi</div>
+          <div class="services">24x7 • Emergency Medicines</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card" onclick="showDetails()">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>Jan Aushadhi Kendra</h3>
+          <div class="rating">⭐ 4.7 (620)</div>
+          <div class="address">Government Hospital Road, Sirohi</div>
+          <div class="services">Generic Medicines • Low Cost</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card" onclick="showDetails()">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card" onclick="showDetails()">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card" onclick="showDetails()">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card" onclick="showDetails()">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card" onclick="showDetails()">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="medical-card">
+        <div class="medical-img">Medical Store Image</div>
+        <div class="medical-body">
+          <h3>HealthPlus Medical</h3>
+          <div class="rating">⭐ 4.3 (290)</div>
+          <div class="address">Mandwa Road, Sirohi</div>
+          <div class="services">Medical Equipment • Surgical</div>
+          <div class="actions">
+            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <script>
+    document.querySelectorAll(".medical-card").forEach(card => {
+      card.addEventListener("click", () => {
+        myFunction(card);
+      });
+    });
 
-  <!-- ALL MEDICAL SHOPS -->
-  <div class="medical-list">
+    function myFunction(card) {
+      window.location.href = "medical_inside.html";
+    }
 
-    <div class="medical-card">
-      <div class="medical-img">Medical Store Image</div>
-      <div class="medical-body">
-        <h3>Sirohi Medical Store</h3>
-        <div class="rating">⭐ 4.6 (540)</div>
-        <div class="address">Main Market, Sirohi</div>
-        <div class="services">Allopathic • Surgical Items</div>
-        <div class="actions">
-          <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-          <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="medical-card">
-      <div class="medical-img">Medical Store Image</div>
-      <div class="medical-body">
-        <h3>LifeCare Pharmacy</h3>
-        <div class="rating">⭐ 4.4 (380)</div>
-        <div class="address">Abu Road, Sirohi</div>
-        <div class="services">24x7 • Emergency Medicines</div>
-        <div class="actions">
-          <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-          <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="medical-card">
-      <div class="medical-img">Medical Store Image</div>
-      <div class="medical-body">
-        <h3>Jan Aushadhi Kendra</h3>
-        <div class="rating">⭐ 4.7 (620)</div>
-        <div class="address">Government Hospital Road, Sirohi</div>
-        <div class="services">Generic Medicines • Low Cost</div>
-        <div class="actions">
-          <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-          <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="medical-card">
-      <div class="medical-img">Medical Store Image</div>
-      <div class="medical-body">
-        <h3>HealthPlus Medical</h3>
-        <div class="rating">⭐ 4.3 (290)</div>
-        <div class="address">Mandwa Road, Sirohi</div>
-        <div class="services">Medical Equipment • Surgical</div>
-        <div class="actions">
-          <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-          <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-      
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="medical-card">
-        <div class="medical-img">Medical Store Image</div>
-        <div class="medical-body">
-          <h3>HealthPlus Medical</h3>
-          <div class="rating">⭐ 4.3 (290)</div>
-          <div class="address">Mandwa Road, Sirohi</div>
-          <div class="services">Medical Equipment • Surgical</div>
-          <div class="actions">
-            <button class="btn call"><i class="fa-solid fa-phone"></i> Call</button>
-            <button class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
-          </div>
-        </div>
-      </div>
-  </div>
-</div>
-
+  </script>
 </body>
+
 </html>

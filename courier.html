@@ -134,5 +134,17 @@
   </div>
 </footer>
 
+<script>
+        document.querySelectorAll(".service-card").forEach(card => {
+            card.addEventListener("click", () => {
+                myFunction(card);
+            });
+        });
+
+        function myFunction(card) {
+            window.location.href = "courier_inside.html";
+        }
+
+    </script>
 </body>
 </html>

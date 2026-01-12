@@ -173,5 +173,17 @@
   </div>
 </footer>
 
+<script>
+        document.querySelectorAll(".cafe-card").forEach(card => {
+            card.addEventListener("click", () => {
+                myFunction(card);
+            });
+        });
+
+        function myFunction(card) {
+            window.location.href = "cafe_inside.html";
+        }
+
+    </script>
 </body>
 </html>

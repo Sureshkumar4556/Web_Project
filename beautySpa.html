@@ -263,5 +263,17 @@
   <div class="footer-bottom">© 2026 Beauty & Spa Directory. All rights reserved.</div>
 </footer>
 
+<script>
+        document.querySelectorAll(".shop-card").forEach(card => {
+            card.addEventListener("click", () => {
+                myFunction(card);
+            });
+        });
+
+        function myFunction(card) {
+            window.location.href = "beauty_inside.html";
+        }
+
+    </script>
 </body>
 </html>

@@ -231,6 +231,17 @@
     © 2026 Bank Directory | All Rights Reserved
   </div>
 </footer>
+<script>
+        document.querySelectorAll(".bank-card").forEach(card => {
+            card.addEventListener("click", () => {
+                myFunction(card);
+            });
+        });
 
+        function myFunction(card) {
+            window.location.href = "banks_inside.html";
+        }
+
+    </script>
 </body>
 </html>

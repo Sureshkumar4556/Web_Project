@@ -221,5 +221,17 @@
   </div>
 </footer>
 
+<script>
+        document.querySelectorAll(".pg-card").forEach(card => {
+            card.addEventListener("click", () => {
+                myFunction(card);
+            });
+        });
+
+        function myFunction(card) {
+            window.location.href = "pg_hostels_inside.html";
+        }
+
+    </script>
 </body>
 </html>

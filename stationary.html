@@ -132,5 +132,17 @@
   <div class="footer-bottom">© 2026 Stationery Shops Directory</div>
 </footer>
 
+<script>
+        document.querySelectorAll(".shop-card").forEach(card => {
+            card.addEventListener("click", () => {
+                myFunction(card);
+            });
+        });
+
+        function myFunction(card) {
+            window.location.href = "stationary_inside.html";
+        }
+
+    </script>
 </body>
 </html>

@@ -235,6 +235,19 @@
         </div>
     </footer>
 
+
+    <script>
+        document.querySelectorAll(".shop-card").forEach(card => {
+            card.addEventListener("click", () => {
+                myFunction(card);
+            });
+        });
+
+        function myFunction(card) {
+            window.location.href = "clothing_inside.html";
+        }
+
+    </script>
 </body>
 
 </html>

@@ -254,5 +254,17 @@
   </div>
 </div>
 
+<script>
+        document.querySelectorAll(".shop-card").forEach(card => {
+            card.addEventListener("click", () => {
+                myFunction(card);
+            });
+        });
+
+        function myFunction(card) {
+            window.location.href = "school_cls_inside.html";
+        }
+
+    </script>
 </body>
 </html>
