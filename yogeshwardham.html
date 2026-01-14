@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Yogeshwar Dham</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f8fbff;
+            color: #1a1a1a;
+        }
+
+        .explore-wrapper {
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        nav {
+            position: sticky;
+            background-color: #fff;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+            max-width: 93%;
+            margin: 20px auto;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .company-logo {
+            height: 90px;
+            width: 150px;
+            object-fit: contain;
+            cursor: pointer;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        ul a {
+            text-decoration: none;
+            margin-right: 12px;
+            color: #1e1e1e;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        ul a:hover {
+            background-color: #e6e5e5;
+        }
+
+        ul a i {
+            margin-right: 10px;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* HERO */
+        .hero {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            color: #0a3d62;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .hero-img {
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 80, 160, 0.15);
+        }
+
+        .hero-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* INFO CARDS */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+            margin-bottom: 90px;
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 18px;
+            padding: 30px;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+        }
+
+        .info-card::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 6px;
+            height: 100%;
+            background: #1e90ff;
+            border-radius: 18px 0 0 18px;
+        }
+
+        .info-card h3 {
+            color: #0a3d62;
+            margin-bottom: 10px;
+        }
+
+        .info-card p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        /* IMAGE GALLERY */
+        .gallery {
+            margin-bottom: 90px;
+        }
+
+        .gallery h2 {
+            text-align: center;
+            font-size: 34px;
+            color: #0a3d62;
+            margin-bottom: 40px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery-item {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* QUOTE */
+        .quote-section {
+            background: linear-gradient(120deg, #0a3d62, #1e90ff);
+            padding: 70px 30px;
+            border-radius: 30px;
+            color: white;
+            text-align: center;
+        }
+
+        .quote-section h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .quote-section p {
+            font-size: 18px;
+            max-width: 720px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #020617;
+            color: #cbd5f5;
+            margin-top: 60px;
+            max-width: 93%;
+            margin: auto;
+            border-radius: 8px;
+        }
+
+        .footer-inner {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 30px;
+        }
+
+        footer h4 {
+            color: #fff;
+            margin-bottom: 12px;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 14px;
+            border-top: 1px solid #1e293b;
+            font-size: 13px;
+        }
+
+        @media (max-width: 900px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <img src="WhatsApp Image 2026-01-13 at 9.16.18 PM.jpeg" class="company-logo" alt="">
+        <ul>
+            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="places.html">Places</a>
+            <a href="aboutPage.html">About Us</a>
+            <a href="contactPage.html">Contact Us</a>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+
+    <div class="explore-wrapper">
+
+        <!-- HERO SECTION -->
+        <div class="hero">
+            <div>
+                <h1>Explore Yogeshwar Dham</h1>
+                <p>
+                    Yogeshwar Dham, situated within SP College, Sirohi, is a sacred place that reflects peace, devotion,
+                    and spiritual awareness. Its calm environment provides a perfect space for meditation and
+                    self-reflection.
+                </p>
+            </div>
+
+            <div class="hero-img">
+                <!-- HERO IMAGE -->
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/25/3c/88/sarvdham-temple-is-a.jpg?w=1000&h=800&s=1"
+                    alt="Yogeshwar Dham">
+            </div>
+        </div>
+
+        <!-- INFO -->
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Spiritual Importance</h3>
+                <p>
+                    The Dham represents Indian spiritual culture and spreads positivity among devotees and students.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>Peaceful Surroundings</h3>
+                <p>
+                    The serene environment helps calm the mind and brings inner peace.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>Center of Inspiration</h3>
+                <p>
+                    Located in an educational campus, it inspires discipline, values, and spiritual growth.
+                </p>
+            </div>
+        </div>
+
+        <!-- GALLERY -->
+        <div class="gallery">
+            <h2>Divine Glimpses</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://sirohieducation.com/wp-content/uploads/2024/06/Ourvalues-min-scaled.jpeg" alt="Yogeshwar Dham Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.eu3KvNXy3NPjATQ5gDFu4gHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Yogeshwar Dham Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/25/3c/88/sarvdham-temple-is-a.jpg?w=1000&h=800&s=1" alt="Yogeshwar Dham Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://sirohieducation.com/wp-content/uploads/2024/06/Campus-scaled.jpg" alt="Yogeshwar Dham Image 4">
+                </div>
+            </div>
+        </div>
+
+        <!-- QUOTE -->
+        <div class="quote-section">
+            <h2>“A Sacred Space of Inner Peace”</h2>
+            <p>
+                Yogeshwar Dham stands as a symbol of faith, silence, and spiritual strength,
+                guiding every visitor towards positivity and self-realization.
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <div>
+                <h4>Explore Sirohi</h4>
+                <p>Discover temples, culture, heritage, and local life of Sirohi city.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li>Home</li>
+                    <li>About Sirohi</li>
+                    <li>Blogs</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>Sirohi, Rajasthan<br>support@exploresirohi.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Explore Sirohi. All rights reserved.</div>
+    </footer>
+</body>
+
+</html>
