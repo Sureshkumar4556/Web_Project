@@ -189,9 +189,42 @@ ul a:hover {
   gap: 6px;
 }
 .btn.call {
-  background: #dc3545;
+  background: #22c55e;
   color: #fff;
   border: none;
+}
+
+footer {
+  background: #020617;
+  color: #cbd5f5;
+  margin-top: 60px;
+  max-width: 93%;
+  margin: auto;
+}
+.footer-inner {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 30px;
+}
+footer h4 {
+  color: #fff;
+  margin-bottom: 12px;
+}
+footer ul {
+  list-style: none;
+}
+footer li {
+  font-size: 14px;
+  line-height: 1.7;
+}
+.footer-bottom {
+  text-align: center;
+  padding: 14px;
+  border-top: 1px solid #1e293b;
+  font-size: 13px;
 }
 
 @media (max-width: 600px) {
