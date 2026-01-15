@@ -87,7 +87,7 @@ ul a:hover{
   align-items:center;
 }
 .shop-logo{
-  width:120px;height:120px;
+  width:150px;height:150px;
   background:#020617;
   border-radius:20px;
   display:flex;
@@ -102,8 +102,8 @@ ul a:hover{
   object-fit: cover;
 }
 
-.shop-info h1{font-size:30px}
-.shop-info p{font-size:14px;margin-top:6px}
+.shop-info h1{font-size:30px;margin-left: 30px;}
+.shop-info p{font-size:14px;margin-top:6px;margin-left: 30px;}
 .rating-badge{
   display:inline-block;
   background:#ede9fe;
@@ -111,7 +111,7 @@ ul a:hover{
   padding:4px 10px;
   border-radius:20px;
   margin-top:8px;
-  font-weight:600;
+  font-weight:600;margin-left: 30px;
 }
 
 /* ACTIONS */
@@ -123,7 +123,7 @@ ul a:hover{
   cursor:pointer;
   font-size:14px;
 }
-.call{background:#22c55e;color:#fff}
+.call{background:#22c55e;color:#fff;margin-left: 30px;}
 .whatsapp{background:transparent;color:#333;border: 1px solid #333;}
 .catalog{background:white;color:#020617}
 
