@@ -3,25 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Dilwara Jain Temples | Tourist Guide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Achalgarh Fort</title>
 
-    <!-- Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&family=Montserrat:wght@300;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: #fafafa;
-            color: #222;
+            font-family: 'Inter', sans-serif;
         }
 
         nav {
@@ -92,95 +84,125 @@
             color: #333;
         }
 
-        section {
-            padding: 90px 10%;
-            max-width: 93%;
-            margin: auto;
+
+        body {
+            background: #ffffff;
+            color: #1b1b1b;
+            line-height: 1.75;
         }
 
-        .hero {
-            height: 60vh;
-            background:
-                linear-gradient(to bottom, rgba(0, 0, 0, .55), rgba(0, 0, 0, .2)),
-                url("https://static.toiimg.com/thumb/msid-100824205,width-1070,height-580,resizemode-75/100824205,pt-32,y_pad-40/100824205.jpg") center/cover no-repeat;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        .hero-content {
-            color: #fff;
-            max-width: 700px;
-        }
-
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 64px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            margin-top: 15px;
-            line-height: 1.7;
-        }
-
-        .intro {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
+        /* Main container */
+        .page {
             max-width: 900px;
+            margin: auto;
+            padding: 80px 24px 100px;
         }
 
-        .split {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .split img {
+        /* Hero image */
+        .hero-image {
             width: 100%;
-            border-radius: 14px;
+            height: 420px;
+            overflow: hidden;
+            margin-bottom: 50px;
         }
 
-        h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 42px;
-            margin-bottom: 20px;
-        }
-
-        .travel-text p {
-            margin-bottom: 15px;
-        }
-
-        .image-strip {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .image-strip img {
+        .hero-image img {
             width: 100%;
-            height: 260px;
+            height: 100%;
             object-fit: cover;
-            border-radius: 12px;
         }
 
-        .full-photo {
-            height: 60vh;
-            background: url("https://static.clubmahindra.com/storage/app/media/hummingbird/Dilwara%20Temples.jpg") center/cover no-repeat;
-            margin: auto;
+        /* Heading */
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            margin-top: 18px;
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 650px;
+        }
+
+        /* Divider */
+        .divider {
+            margin: 55px 0;
+            height: 1px;
+            background: #e6e6e6;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 65px;
+        }
+
+        section h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 16px;
             max-width: 93%;
-        }
-
-        .highlight {
-            font-family: 'Playfair Display', serif;
-            font-size: 28px;
-            text-align: center;
-            max-width: 850px;
             margin: auto;
-            line-height: 1.6;
         }
 
-        .site-footer {
+        section p {
+            font-size: 1.05rem;
+            color: #333;
+        }
+
+        /* Content image */
+        .content-image {
+            margin: 40px 0;
+            border-radius: 14px;
+            overflow: hidden;
+        }
+
+        .content-image img {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+        }
+
+        /* Quote block */
+        .highlight {
+            background: #f8f8f8;
+            padding: 32px;
+            border-left: 4px solid #000;
+            margin: 70px 0;
+        }
+
+        /* Info grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+        }
+
+        .info {
+            padding: 26px;
+            border: 1px solid #ededed;
+            border-radius: 10px;
+        }
+
+        .info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .explore{
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: none;
+            border: none;
+            color: #017cff;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+         .site-footer {
             background: #222;
             color: #fff;
             padding: 50px 20px 20px;
@@ -276,100 +298,127 @@
             font-size: 14px;
             color: #aaa;
         }
+
+        /* Mobile */
+        @media(max-width:600px) {
+            h1 {
+                font-size: 2.3rem;
+            }
+
+            .hero-image {
+                height: 280px;
+            }
+
+            .content-image img {
+                height: 260px;
+            }
+        }
     </style>
 </head>
 
 <body>
-
     <nav>
         <img src="WhatsApp Image 2026-01-13 at 9.16.18 PM.jpeg" class="company-logo" alt="SirohiConnect Logo">
         <ul>
-             <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
             <a href="places.html">Places</a>
             <a href="aboutPage.html">About Us</a>
             <a href="contactPage.html">Contact Us</a>
         </ul>
         <div class="menu-toggle">&#9776;</div>
     </nav>
+    <div class="page">
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Dilwara Jain Temples</h1>
-            <p>
-                A must-visit heritage site in Mount Abu, famous for its breathtaking marble art
-                and peaceful spiritual atmosphere.
-            </p>
+        <!-- Hero Image -->
+        <div class="hero-image">
+            <img src="https://media1.thrillophilia.com/filestore/jl3mx317j3dtj15xvot90cb3kdlu_46189601984_e188bcb7a9_o.jpg?w=1440&dpr=2" alt="Achalgarh Fort">
         </div>
-    </section>
 
-    <!-- INTRO -->
-    <section>
-        <p class="intro">
-            When tourists visit Mount Abu, the Dilwara Jain Temples are often the highlight of the trip.
-            Surrounded by green hills and calm surroundings, this place offers not just history,
-            but a deeply soothing travel experience.
+        <h1>Exploring Achalgarh Fort</h1>
+        <p class="subtitle">
+            Hidden in the Aravalli hills near Mount Abu, Achalgarh Fort offers
+            a quiet escape into Rajasthan’s lesser-known history and landscapes.
         </p>
-    </section>
 
-    <!-- EXPERIENCE -->
-    <section class="split">
-        <div class="travel-text">
-            <h2>What Makes It Special?</h2>
+        <div class="divider"></div>
+
+        <section>
+            <h2>History of the Fort</h2>
             <p>
-                From a tourist’s point of view, Dilwara is not about size or height,
-                but about detail. The temples look simple from outside, but once inside,
-                visitors are left speechless by the fine marble carvings.
+                Achalgarh Fort was built in the 14th century by King Achal Singh
+                of the Paramara dynasty. It served as a defensive stronghold,
+                protecting the region from invasions. Even today, the ruins
+                reflect the fort’s strategic importance and timeless character.
             </p>
+        </section>
+
+        <div class="content-image">
+            <img src="https://wanderon-images.gumlet.io/gallery/new/2025/08/18/1755519760309-achalgarh-fort.jpeg" alt="Fort Walls">
+        </div>
+
+        <section>
+            <h2>Architecture & Surroundings</h2>
             <p>
-                Every ceiling, pillar, and corridor tells a story of devotion and craftsmanship.
-                Even travelers who are not religious admire the beauty and calm of this place.
+                The fort features massive stone walls, high gateways, and a
+                peaceful atmosphere rarely found at popular tourist sites.
+                Inside the complex stands the Achaleshwar Mahadev Temple,
+                giving the place both cultural and spiritual significance.
+            </p>
+        </section>
+
+        <div class="highlight">
+            <p>
+                “Achalgarh Fort is not about crowds or grandeur — it is about
+                silence, history, and the feeling of standing somewhere timeless.”
             </p>
         </div>
 
-        <img src="https://preview.redd.it/70lb0bbf7yc61.png?width=640&crop=smart&auto=webp&s=b4b7e6818b955cc5162ceca76b6d7756dbde5530"
-            alt="Temple carvings">
-    </section>
-
-    <!-- IMAGE STRIP -->
-    <section class="image-strip">
-        <img src="https://www.esamskriti.com/photograph/57_15750.jpg?2022122922146">
-        <img src="https://www.scrolldroll.com/wp-content/uploads/2019/02/Delwara-Jain-Temple.jpg">
-        <img
-            src="https://tse4.mm.bing.net/th/id/OIP.techk7yWbBs93hk3ONxzPQHaE8?w=700&h=467&rs=1&pid=ImgDetMain&o=7&rm=3">
-    </section>
-
-    <!-- FULL IMAGE -->
-    <div class="full-photo"></div>
-
-    <!-- VISITING INFO -->
-    <section class="split">
-        <img
-            src="https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/city/explore/Dilwara%20Jain%20Temple.jpg">
-
-        <div class="travel-text">
-            <h2>Tourist Experience</h2>
-            <p>
-                The temples are peaceful, clean, and well-maintained, making them perfect for
-                morning visits. Photography is restricted inside, which helps preserve the
-                calm and spiritual environment.
-            </p>
-            <p>
-                Tourists often combine their visit with Nakki Lake and Sunset Point, making
-                Dilwara Jain Temples an essential stop in Mount Abu sightseeing.
-            </p>
+        <div class="content-image">
+            <img src="https://c1.staticflickr.com/9/8336/8144007701_5276510421_b.jpg" alt="Aravalli Hills View">
         </div>
-    </section>
 
-    <!-- QUOTE -->
-    <section>
-        <p class="highlight">
-            “A visit to Dilwara is not just sightseeing — it is a moment of silence,
-            beauty, and admiration.”
-        </p>
-    </section>
+        <section>
+            <h2>Why Visit Achalgarh Fort?</h2>
+            <div class="info-grid">
+                <div class="info">
+                    <h3>Peaceful Experience</h3>
+                    <p>
+                        Away from crowded destinations, the fort offers calm
+                        surroundings and uninterrupted views.
+                    </p>
+                </div>
 
-    <footer class="site-footer">
+                <div class="info">
+                    <h3>Scenic Landscape</h3>
+                    <p>
+                        The Aravalli hills create a perfect backdrop for
+                        photography and slow exploration.
+                    </p>
+                </div>
+
+                <div class="info">
+                    <h3>Hidden Heritage</h3>
+                    <p>
+                        Ideal for travelers interested in discovering
+                        Rajasthan’s lesser-known historical sites.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Travel Tips</h2>
+            <p>
+                Visit early in the morning or late afternoon for the best light.
+                Comfortable footwear is recommended as the terrain is uneven.
+                Monsoon season enhances the beauty of the surrounding hills.
+            </p>
+
+            <a class="explore" href="https://en.wikipedia.org/wiki/Achalgarh_Fort" target="_blank">Learn More</a>
+        </section>
+
+    </div>
+  <footer class="site-footer">
         <div class="footer-container">
 
             <!-- ABOUT / BRAND -->
@@ -420,6 +469,11 @@
         </div>
     </footer>
 
+    <script>
+        function openWiki(){
+            window.location.href("https://en.wikipedia.org/wiki/Achalgarh_Fort")
+        }
+    </script>
 </body>
 
 </html>

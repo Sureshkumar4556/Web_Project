@@ -10,24 +10,26 @@
 <link rel="stylesheet" href="cafe.css">
 </head>
 <body>
-
+<nav>
+    <ul>
+      <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+      <a href="places.html">Places</a>
+      <a href="aboutPage.html">About Us</a>
+      <a href="contactPage.html">Contact Us</a>
+    </ul>
+    <div class="menu-toggle">&#9776;</div>
+  </nav>
 <div class="container">
   <h1>Cafes in Sirohi</h1>
   <div class="subtitle">Best cafés, fast food & hangout places</div>
-
-  <!-- CATEGORIES -->
-  <div class="categories">
-    <button class="category-btn active"><i class="fa-solid fa-mug-hot"></i>All Cafes</button>
-    <button class="category-btn"><i class="fa-solid fa-burger"></i>Fast Food</button>
-    <button class="category-btn"><i class="fa-solid fa-cake-candles"></i>Cakes</button>
-    <button class="category-btn"><i class="fa-solid fa-martini-glass"></i>Juice</button>
-  </div>
 
   <!-- CAFE LIST -->
   <div class="cafe-list">
 
     <div class="cafe-card">
-      <div class="cafe-top"><i class="fa-solid fa-mug-hot"></i></div>
+      <div class="cafe-top">
+        <img src="https://img.restaurantguru.com/c7d8-9tiz-Cafe-and-Restro-Sumerpur-food.jpg" alt="">
+      </div>
       <div class="cafe-body">
         <h3>9TIZ CAFE & FAST FOOD</h3>
         <div class="rating">⭐ 4.6</div>
@@ -40,7 +42,9 @@
     </div>
 
     <div class="cafe-card">
-      <div class="cafe-top"><i class="fa-solid fa-utensils"></i></div>
+      <div class="cafe-top">
+        <img src="https://i.ytimg.com/vi/UmS2g5822E8/maxresdefault.jpg" alt="">
+      </div>
       <div class="cafe-body">
         <h3>SIROHI'S WHITE HOUSE CAFE</h3>
         <div class="rating">⭐ 4.7</div>
@@ -53,7 +57,9 @@
     </div>
 
     <div class="cafe-card">
-      <div class="cafe-top"><i class="fa-solid fa-cake-candles"></i></div>
+      <div class="cafe-top">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.WIe2EuDOaMhKxDJyoPOz3gHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+      </div>
       <div class="cafe-body">
         <h3>MARWAD CAKES & CAFE SIROHI</h3>
         <div class="rating">⭐ 4.8</div>
@@ -66,7 +72,9 @@
     </div>
 
     <div class="cafe-card">
-      <div class="cafe-top"><i class="fa-solid fa-mug-saucer"></i></div>
+      <div class="cafe-top">
+        <img src="https://b.zmtcdn.com/data/pictures/3/20291533/5be416812cc4dffa6bb9003322f9ca87.jpg" alt="">
+      </div>
       <div class="cafe-body">
         <h3>SHREE BHRAHMANI CAFE</h3>
         <div class="rating">⭐ 4.4</div>
@@ -79,7 +87,9 @@
     </div>
 
     <div class="cafe-card">
-      <div class="cafe-top"><i class="fa-solid fa-seedling"></i></div>
+      <div class="cafe-top">
+        <img src="https://th.bing.com/th/id/OIP.0CMkqDe2B1dVJBxLN_5THwHaE8?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+      </div>
       <div class="cafe-body">
         <h3>COFFEE BEANS SIROHI</h3>
         <div class="rating">⭐ 4.6</div>
@@ -92,7 +102,9 @@
     </div>
 
     <div class="cafe-card">
-      <div class="cafe-top"><i class="fa-solid fa-burger"></i></div>
+      <div class="cafe-top">
+        <img src="https://im.whatshot.in/img/2022/Jan/body-image-3-bistro-37-1642061846.jpg" alt="">
+      </div>
       <div class="cafe-body">
         <h3>GUPSHUP SANDWICH STATIONS</h3>
         <div class="rating">⭐ 4.5</div>
@@ -105,7 +117,9 @@
     </div>
 
     <div class="cafe-card">
-      <div class="cafe-top"><i class="fa-solid fa-kitchen-set"></i></div>
+      <div class="cafe-top">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.MGhJ5PJzutomNnoXWGMRsgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+      </div>
       <div class="cafe-body">
         <h3>THE POOH'S KITCHENS</h3>
         <div class="rating">⭐ 4.6</div>
@@ -118,7 +132,9 @@
     </div>
 
     <div class="cafe-card">
-      <div class="cafe-top"><i class="fa-solid fa-glass-water"></i></div>
+      <div class="cafe-top">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.6Urmqz-XjYVq5eaYrOZ2hAHaDl?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+      </div>
       <div class="cafe-body">
         <h3>LAXMI JUICE</h3>
         <div class="rating">⭐ 4.3</div>
@@ -134,44 +150,56 @@
 </div>
 
 <!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-container">
-    <div>
-      <h3>Cafe Directory</h3>
-      <p>Discover the best cafes, bakeries and fast food spots in Sirohi.</p>
+<footer class="site-footer">
+    <div class="footer-container">
+
+      <!-- ABOUT / BRAND -->
+      <div class="footer-about">
+        <h3>Sirohi Tourism</h3>
+        <p>Discover the beauty, culture, and heritage of Sirohi. Explore historic temples, forts, and scenic
+          hills.</p>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#places">Places</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- EXPLORE -->
+      <div class="footer-explore">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#mountabu">Mount Abu</a></li>
+          <li><a href="#dilwara">Dilwara Temple</a></li>
+          <li><a href="#achalgarh">Achalgarh Fort</a></li>
+          <li><a href="#other">Other Places</a></li>
+        </ul>
+      </div>
+
+      <!-- FOLLOW US -->
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
     </div>
 
-    <div>
-      <h4>Categories</h4>
-      <ul>
-        <li>Cafes</li>
-        <li>Fast Food</li>
-        <li>Cakes & Bakery</li>
-        <li>Juice Centers</li>
-      </ul>
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sirohi Tourism. All rights reserved.</p>
     </div>
-
-    <div>
-      <h4>Quick Links</h4>
-      <ul>
-        <li>Home</li>
-        <li>All Cafes</li>
-        <li>Contact</li>
-        <li>About</li>
-      </ul>
-    </div>
-
-    <div>
-      <h4>Location</h4>
-      <p><i class="fa-solid fa-location-dot"></i> Sirohi, Rajasthan</p>
-      <p><i class="fa-solid fa-phone"></i> +91 9XXXXXXXXX</p>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    © 2026 Cafe Directory | Designed for Sirohi
-  </div>
-</footer>
+  </footer>
 
 <script>
         document.querySelectorAll(".cafe-card").forEach(card => {
