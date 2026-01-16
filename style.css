@@ -463,8 +463,8 @@ ul a:hover {
 }
 
 .place-item img {
-    width: 130px;
-    height: 100px;
+    width: 170px;
+    height: 140px;
     object-fit: cover;
     border-radius: 8px;
 }

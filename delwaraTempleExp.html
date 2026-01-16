@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dilwara Jain Temples | Tourist Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&family=Montserrat:wght@300;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #fafafa;
+            color: #222;
+        }
+
+        nav {
+            position: sticky;
+            background-color: #fff;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+            max-width: 93%;
+            margin: auto;
+            border-bottom: 0.5px solid #f4f4f4;
+        }
+
+        .company-logo {
+            height: 90px;
+            width: 150px;
+            object-fit: contain;
+            cursor: pointer;
+        }
+
+        .login {
+            cursor: pointer;
+            border: 0;
+            transition: all 0.3s ease;
+        }
+
+        .btn {
+            margin-top: 0;
+            padding: 10px 15px;
+            text-decoration: none;
+            background-color: #017cff;
+            color: #f9f9f9;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: 0.4s;
+            border: 2px solid transparent;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        ul a {
+            text-decoration: none;
+            margin-right: 12px;
+            color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        ul a i {
+            margin-right: 6px;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            color: white;
+            cursor: pointer;
+        }
+
+        ul a:hover {
+            background-color: #e6e5e5;
+            color: #333;
+        }
+
+        section {
+            padding: 90px 10%;
+            max-width: 93%;
+            margin: auto;
+        }
+
+        .hero {
+            height: 60vh;
+            background:
+                linear-gradient(to bottom, rgba(0, 0, 0, .55), rgba(0, 0, 0, .2)),
+                url("https://static.toiimg.com/thumb/msid-100824205,width-1070,height-580,resizemode-75/100824205,pt-32,y_pad-40/100824205.jpg") center/cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .hero-content {
+            color: #fff;
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 64px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-top: 15px;
+            line-height: 1.7;
+        }
+
+        .intro {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            max-width: 900px;
+        }
+
+        .split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .split img {
+            width: 100%;
+            border-radius: 14px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .travel-text p {
+            margin-bottom: 15px;
+        }
+
+        .image-strip {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .image-strip img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .full-photo {
+            height: 60vh;
+            background: url("https://static.clubmahindra.com/storage/app/media/hummingbird/Dilwara%20Temples.jpg") center/cover no-repeat;
+            margin: auto;
+            max-width: 93%;
+        }
+
+        .highlight {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            text-align: center;
+            max-width: 850px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .site-footer {
+            background: #222;
+            color: #fff;
+            padding: 50px 20px 20px;
+            width: 93%;
+            margin-top: 30px;
+            margin: auto;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 1200px;
+            margin: auto;
+            justify-content: space-between;
+        }
+
+        /* ABOUT */
+        .footer-about h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .footer-about p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        /* LINKS & EXPLORE */
+        .footer-links h4,
+        .footer-explore h4,
+        .footer-social h4 {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .footer-links ul,
+        .footer-explore ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links ul li,
+        .footer-explore ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links ul li a,
+        .footer-explore ul li a {
+            text-decoration: none;
+            color: #ccc;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links ul li a:hover,
+        .footer-explore ul li a:hover {
+            color: orange;
+        }
+
+        /* SOCIAL ICONS */
+        .footer-social .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-social .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            background: #333;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .footer-social .social-icons a:hover {
+            background: orange;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        /* COPYRIGHT */
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            border-top: 1px solid #444;
+            padding-top: 15px;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="places.html">Places</a>
+            <a href="aboutPage.html">About Us</a>
+            <a href="contactPage.html">Contact Us</a>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Dilwara Jain Temples</h1>
+            <p>
+                A must-visit heritage site in Mount Abu, famous for its breathtaking marble art
+                and peaceful spiritual atmosphere.
+            </p>
+        </div>
+    </section>
+
+    <!-- INTRO -->
+    <section>
+        <p class="intro">
+            When tourists visit Mount Abu, the Dilwara Jain Temples are often the highlight of the trip.
+            Surrounded by green hills and calm surroundings, this place offers not just history,
+            but a deeply soothing travel experience.
+        </p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="split">
+        <div class="travel-text">
+            <h2>What Makes It Special?</h2>
+            <p>
+                From a tourist’s point of view, Dilwara is not about size or height,
+                but about detail. The temples look simple from outside, but once inside,
+                visitors are left speechless by the fine marble carvings.
+            </p>
+            <p>
+                Every ceiling, pillar, and corridor tells a story of devotion and craftsmanship.
+                Even travelers who are not religious admire the beauty and calm of this place.
+            </p>
+        </div>
+
+        <img src="https://preview.redd.it/70lb0bbf7yc61.png?width=640&crop=smart&auto=webp&s=b4b7e6818b955cc5162ceca76b6d7756dbde5530"
+            alt="Temple carvings">
+    </section>
+
+    <!-- IMAGE STRIP -->
+    <section class="image-strip">
+        <img src="https://www.esamskriti.com/photograph/57_15750.jpg?2022122922146">
+        <img src="https://www.scrolldroll.com/wp-content/uploads/2019/02/Delwara-Jain-Temple.jpg">
+        <img
+            src="https://tse4.mm.bing.net/th/id/OIP.techk7yWbBs93hk3ONxzPQHaE8?w=700&h=467&rs=1&pid=ImgDetMain&o=7&rm=3">
+    </section>
+
+    <!-- FULL IMAGE -->
+    <div class="full-photo"></div>
+
+    <!-- VISITING INFO -->
+    <section class="split">
+        <img
+            src="https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/city/explore/Dilwara%20Jain%20Temple.jpg">
+
+        <div class="travel-text">
+            <h2>Tourist Experience</h2>
+            <p>
+                The temples are peaceful, clean, and well-maintained, making them perfect for
+                morning visits. Photography is restricted inside, which helps preserve the
+                calm and spiritual environment.
+            </p>
+            <p>
+                Tourists often combine their visit with Nakki Lake and Sunset Point, making
+                Dilwara Jain Temples an essential stop in Mount Abu sightseeing.
+            </p>
+        </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section>
+        <p class="highlight">
+            “A visit to Dilwara is not just sightseeing — it is a moment of silence,
+            beauty, and admiration.”
+        </p>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <!-- ABOUT / BRAND -->
+            <div class="footer-about">
+                <h3>Sirohi Tourism</h3>
+                <p>Discover the beauty, culture, and heritage of Sirohi. Explore historic temples, forts, and scenic
+                    hills.</p>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#places">Places</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- EXPLORE -->
+            <div class="footer-explore">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#mountabu">Mount Abu</a></li>
+                    <li><a href="#dilwara">Dilwara Temple</a></li>
+                    <li><a href="#achalgarh">Achalgarh Fort</a></li>
+                    <li><a href="#other">Other Places</a></li>
+                </ul>
+            </div>
+
+            <!-- FOLLOW US -->
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sirohi Tourism. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

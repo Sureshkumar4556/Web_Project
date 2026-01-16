@@ -10,17 +10,22 @@
 
 <body>
 
+  <nav>
+      <ul>
+        <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="places.html">Places</a>
+        <a href="aboutPage.html">About Us</a>
+        <a href="contactPage.html">Contact Us</a>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+
 <div class="container">
   <h1>Hardware & Paints Stores</h1>
   <div class="subtitle">All hardware, paint & construction material shops</div>
 
   <div class="categories">
     <button class="category-btn active"><i class="fa-solid fa-layer-group"></i>All</button>
-    <button class="category-btn"><i class="fa-solid fa-hammer"></i>Hardware</button>
-    <button class="category-btn"><i class="fa-solid fa-paint-roller"></i>Paints</button>
-    <button class="category-btn"><i class="fa-solid fa-screwdriver-wrench"></i>Tools</button>
-    <button class="category-btn"><i class="fa-solid fa-bolt"></i>Electrical</button>
-    <button class="category-btn"><i class="fa-solid fa-industry"></i>Construction</button>
   </div>
 
   <div class="shop-list">
@@ -191,41 +196,56 @@
   </div>
 </div>
 
-<footer class="footer">
-  <div class="footer-container">
-    <div>
-      <h3>Hardware & Paints Directory</h3>
-      <p>Find trusted hardware & paint stores near you.</p>
-    </div>
-    <div>
-      <h4>Products</h4>
-      <ul>
-        <li>Paints</li>
-        <li>Hardware</li>
-        <li>Tools</li>
-        <li>Construction Material</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Quick Links</h4>
-      <ul>
-        <li>Home</li>
-        <li>All Stores</li>
-        <li>Contact</li>
-        <li>About</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Contact</h4>
-      <p><i class="fa-solid fa-location-dot"></i> Sirohi, Rajasthan</p>
-      <p><i class="fa-solid fa-phone"></i> +91 9XXXXXXXXX</p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    © 2026 Hardware & Paints Directory. All rights reserved.
-  </div>
-</footer>
+<footer class="site-footer">
+    <div class="footer-container">
 
+      <!-- ABOUT / BRAND -->
+      <div class="footer-about">
+        <h3>Sirohi Tourism</h3>
+        <p>Discover the beauty, culture, and heritage of Sirohi. Explore historic temples, forts, and scenic
+          hills.</p>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#places">Places</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- EXPLORE -->
+      <div class="footer-explore">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#mountabu">Mount Abu</a></li>
+          <li><a href="#dilwara">Dilwara Temple</a></li>
+          <li><a href="#achalgarh">Achalgarh Fort</a></li>
+          <li><a href="#other">Other Places</a></li>
+        </ul>
+      </div>
+
+      <!-- FOLLOW US -->
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sirohi Tourism. All rights reserved.</p>
+    </div>
+  </footer>
 <script>
      document.querySelectorAll(".shop-card").forEach(card => {
             card.addEventListener("click", () => {
