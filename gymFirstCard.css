@@ -205,7 +205,7 @@ ul a i {
   border-radius: 10px;
   background: #f3f3f3;
   border: 1px solid #334155;
-  color: white;
+  color: #333;
   margin-bottom: 10px;
 }
 .address-box button {
@@ -280,6 +280,7 @@ ul a i {
   height: 250px;
   border-radius: 14px;
   border: none;
+  cursor: pointer;
 }
 
 /* FOOTER */
