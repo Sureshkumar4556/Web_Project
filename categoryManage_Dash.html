@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Category</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="categoryManage_Dash.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <aside class="sidebar">
+        <h2><i class="fa fa-circle-nodes"></i><span>SirohiAdmin</span></h2>
+        <ul>
+            <li><a href="file:///home/chirag/Desktop/SIROHI_DIRECTORY_WEBSITE_FILE/Dashborad_Page/Dashborad_Page.html"><i class="fa fa-chart-line"></i><span>Overview</span></a></li>
+            <li><a href="file:///home/chirag/Desktop/SIROHI_DIRECTORY_WEBSITE_FILE/Dashborad_Page/Business_Requests.html"><i class="fa fa-store"></i><span>Business Requests</span></a></li>
+            <li><a href="file:///home/chirag/Desktop/SIROHI_DIRECTORY_WEBSITE_FILE/Dashborad_Page/Notification.html"><i class="fa fa-bell"></i><span>Notification</span></a></li>
+            <li><a href="file:///home/chirag/Desktop/SIROHI_DIRECTORY_WEBSITE_FILE/Dashborad_Page/User.html#"><i class="fa fa-users"></i><span>Users</span></a></li>
+            <li><a href="file:///home/chirag/Desktop/SIROHI_DIRECTORY_WEBSITE_FILE/Dashborad_Page/Visitors.html"><i class="fa fa-chart-line"></i><span>Visitors</span></a></li>
+            <li><a href="#" class="active"><i class="fa fa-layer-group"></i><span>Categories</span></a></li>
+            <li><a href="/home/chirag/Desktop/SIROHI_DIRECTORY_WEBSITE_FILE/Dashborad_Page/Setting.html"><i class="fa fa-gear"></i><span>Setting</span></a></li>
+            <li><a href="#"><i class="fa fa-gear"></i><span>Logout</span></a></li>
+        </ul>
+    </aside>
+
+    <main class="main">
+        <div style="margin-bottom: 25px;">
+            <h1 style="font-size: 1.5rem; font-weight: 800;">Master Category Management</h1>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Control the visibility of all 26 core business sectors.</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon stat-blue"><i class="fa fa-list-check"></i></div>
+                <div>
+                    <p style="color: var(--text-muted); font-size: 0.75rem;">Total Categories</p>
+                    <h3>26</h3>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon stat-green"><i class="fa fa-eye"></i></div>
+                <div>
+                    <p style="color: var(--text-muted); font-size: 0.75rem;">Active on App</p>
+                    <h3 id="active-count">26</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEW SECTION: Trend Analysis & Activity -->
+        <div class="trend-grid">
+            <div class="trend-card">
+                <h3>Listing Verification Status</h3>
+                <div class="progress-bar-container">
+                    <div class="progress-label"><span>Hospital & Medical</span> <span>85% Verified</span></div>
+                    <div class="progress-track"><div class="progress-fill" style="width: 85%;"></div></div>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-label"><span>Hotels & Restaurants</span> <span>60% Verified</span></div>
+                    <div class="progress-track"><div class="progress-fill" style="width: 60%; background: var(--warning);"></div></div>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-label"><span>Education (School/College)</span> <span>92% Verified</span></div>
+                    <div class="progress-track"><div class="progress-fill" style="width: 92%; background: var(--success);"></div></div>
+                </div>
+            </div>
+            <div class="trend-card">
+                <h3>Recent Activity Log</h3>
+                <div class="activity-item">
+                    <div class="activity-circle" style="background: var(--success);"></div>
+                    <div>
+                        <p class="activity-text"><strong>Super Market</strong> category enabled by Admin.</p>
+                        <p class="activity-time">2 mins ago</p>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-circle" style="background: var(--info);"></div>
+                    <div>
+                        <p class="activity-text">New listing added in <strong>Electronics</strong>.</p>
+                        <p class="activity-time">1 hour ago</p>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-circle" style="background: var(--danger);"></div>
+                    <div>
+                        <p class="activity-text"><strong>Mobile Shop</strong> visibility toggled to OFF.</p>
+                        <p class="activity-time">5 hours ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th width="50">#</th>
+                        <th>Category Name</th>
+                        <th>Icon</th>
+                        <th>Visibility Status</th>
+                    </tr>
+                </thead>
+                <tbody id="category-list">
+                    <!-- Categories will be injected here via JS -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+
+<script>
+    const categories = [
+        { name: "Hospital", icon: "fa-hospital" },
+        { name: "Medical", icon: "fa-briefcase-medical" },
+        { name: "Footware", icon: "fa-shoe-prints" },
+        { name: "Mobile Shop", icon: "fa-mobile-screen-button" },
+        { name: "Electronics", icon: "fa-plug" },
+        { name: "Computer Shop", icon: "fa-laptop" },
+        { name: "Hotels", icon: "fa-hotel" },
+        { name: "Restaurants", icon: "fa-utensils" },
+        { name: "School", icon: "fa-school" },
+        { name: "College", icon: "fa-graduation-cap" },
+        { name: "Super Market", icon: "fa-cart-shopping" },
+        { name: "Pharmacy", icon: "fa-pills" },
+        { name: "Gym & Fitness", icon: "fa-dumbbell" },
+        { name: "Boutique", icon: "fa-shirt" },
+        { name: "Jewelry Shop", icon: "fa-gem" },
+        { name: "Real Estate", icon: "fa-house-chimney" },
+        { name: "Automobile", icon: "fa-car" },
+        { name: "Bank & ATM", icon: "fa-building-columns" },
+        { name: "Hardware", icon: "fa-hammer" },
+        { name: "Salon & Spa", icon: "fa-scissors" },
+        { name: "Stationery", icon: "fa-pen-nib" },
+        { name: "Photography", icon: "fa-camera" },
+        { name: "Gift Shop", icon: "fa-gift" },
+        { name: "Tailor", icon: "fa-needle" },
+        { name: "Furniture", icon: "fa-couch" },
+        { name: "Bakery", icon: "fa-cake-candles" }
+    ];
+
+    function renderCategories() {
+        const list = document.getElementById('category-list');
+        list.innerHTML = categories.map((cat, index) => `
+            <tr>
+                <td>${index + 1}</td>
+                <td>
+                    <div class="cat-badge">
+                        <div class="icon-box"><i class="fa ${cat.icon}"></i></div>
+                        <strong>${cat.name}</strong>
+                    </div>
+                </td>
+                <td><code style="background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-size: 0.75rem;">${cat.icon}</code></td>
+                <td>
+                    <div class="status-cell">
+                        <label class="switch">
+                            <input type="checkbox" checked onchange="toggleStatus(this)">
+                            <span class="slider"></span>
+                        </label>
+                        <span class="status-text active">Active</span>
+                    </div>
+                </td>
+            </tr>
+        `).join('');
+    }
+
+    function toggleStatus(checkbox) {
+        const textSpan = checkbox.parentElement.nextElementSibling;
+        if (checkbox.checked) {
+            textSpan.textContent = "Active";
+            textSpan.className = "status-text active";
+        } else {
+            textSpan.textContent = "Inactive";
+            textSpan.className = "status-text inactive";
+        }
+        updateActiveCount();
+    }
+
+    function updateActiveCount() {
+        const count = document.querySelectorAll('input[type="checkbox"]:checked').length;
+        document.getElementById('active-count').textContent = count;
+    }
+
+    window.onload = renderCategories;
+</script>
+
+</body>
+</html>

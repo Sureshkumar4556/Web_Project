@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Business_Requests</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="business_Dash.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2><i class="fa fa-circle-nodes"></i><span>SirohiAdmin</span></h2>
+        <ul>
+            <li><a href="file:///home/chirag/Desktop/SIROHI_DIRECTORY_WEBSITE_FILE/Dashborad_Page/Dashborad_Page.html"><i class="fa fa-chart-line"></i><span>Overview</span></a></li>
+            <li><a href="#" class="active"><i class="fa fa-store"></i><span>Business Requests</span></a></li>
+            <li><a href="file:///home/chirag/Desktop/SIROHI_DIRECTORY_WEBSITE_FILE/Dashborad_Page/Notification.html"><i class="fa fa-bell"></i><span>Notification</span></a></li>
+            <li><a href="file:///home/chirag/Desktop/SIROHI_DIRECTORY_WEBSITE_FILE/Dashborad_Page/User.html#"><i class="fa fa-users"></i><span>Users</span></a></li>
+            <li><a href="file:///home/chirag/Desktop/SIROHI_DIRECTORY_WEBSITE_FILE/Dashborad_Page/Visitors.html"><i class="fa fa-chart-line"></i><span>Visitors</span></a></li>
+            <li><a href="file:///home/chirag/Desktop/SIROHI_DIRECTORY_WEBSITE_FILE/Dashborad_Page/Category_Management.html"><i class="fa fa-layer-group"></i><span>Categories</span></a></li>
+            <li><a href="file:///home/chirag/Desktop/SIROHI_DIRECTORY_WEBSITE_FILE/Dashborad_Page/Setting.html"><i class="fa fa-gear"></i><span>Setting</span></a></li>
+            <li><a href="#"><i class="fa fa-gear"></i><span>Logout</span></a></li>
+        </ul>
+    </aside>
+
+    <main class="main">
+        <!-- Stats Summary -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon stat-blue"><i class="fa fa-paper-plane"></i></div>
+                <div>
+                    <p style="color: var(--text-muted); font-size: 0.75rem;">Submissions</p>
+                    <h3 id="stat-total">128</h3>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon stat-orange"><i class="fa fa-clock"></i></div>
+                <div>
+                    <p style="color: var(--text-muted); font-size: 0.75rem;">Waiting</p>
+                    <h3 id="stat-pending">14</h3>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon stat-green"><i class="fa fa-check-double"></i></div>
+                <div>
+                    <p style="color: var(--text-muted); font-size: 0.75rem;">Live Shops</p>
+                    <h3 id="stat-live">94</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEW SECTION: Add Business Manually -->
+        <section class="form-card">
+            <h3 style="font-size: 1rem; margin-bottom: 5px;"><i class="fa fa-plus-circle" style="color: var(--primary);"></i> Register New Business</h3>
+            <p style="font-size: 0.75rem; color: var(--text-muted);">Quickly add a verified business to the directory.</p>
+            
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Business Name</label>
+                    <input type="text" id="newBizName" class="form-control" placeholder="e.g. Sirohi Sweets">
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <select id="newBizCat" class="form-control">
+                        <option value="Restaurant">Restaurant</option>
+                        <option value="Healthcare">Footware Shop</option>
+                        <option value="Education">Education</option>
+                        <option value="Retail">Hospital</option>
+                        <option value="Service">Medical</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Owner Name</label>
+                    <input type="text" id="newBizOwner" class="form-control" placeholder="Owner Name">
+                </div>
+                <div class="form-group">
+                    <label>Contact Number</label>
+                    <input type="text" id="newBizContact" class="form-control" placeholder="+91 xxxxxxxxxx">
+                </div>
+                <div class="form-group" style="display: flex; align-items: flex-end;">
+                    <button class="btn btn-primary" onclick="addNewBusiness()" style="width: 100%; height: 38px;">
+                        <i class="fa fa-check-circle"></i> Register
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div class="header-actions">
+            <div class="search-container">
+                <i class="fa fa-search"></i>
+                <input type="text" id="searchInput" class="search-input" placeholder="Quick find business or category...">
+            </div>
+        </div>
+
+        <div class="dashboard-content">
+            <!-- Table Container -->
+            <section class="table-box">
+                <div class="table-header">
+                    <h3>Recent Submissions</h3>
+                </div>
+                <table id="businessTable">
+                    <thead>
+                        <tr>
+                            <th>Business</th>
+                            <th>Category</th>
+                            <th>Contact</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr data-name="Arbuda Restaurant">
+                            <td>
+                                <div style="font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                                    <i class="fa fa-utensils" style="color: var(--text-muted); font-size: 0.7rem;"></i>
+                                    Arbuda Restaurant
+                                </div>
+                                <div style="font-size: 0.7rem; color: var(--text-muted);">Main Market</div>
+                            </td>
+                            <td><span style="font-size: 0.75rem; color: var(--text-muted);">Restaurant</span></td>
+                            <td><div style="font-size: 0.75rem;">+91 9876543210</div></td>
+                            <td><span class="status pending">Pending</span></td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn btn-approve" onclick="updateStatus(this, 'approved')"><i class="fa fa-check"></i></button>
+                                    <button class="btn btn-reject" onclick="openRejectModal('Arbuda Restaurant')"><i class="fa fa-x"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-name="Sirohi Medical Store">
+                            <td>
+                                <div style="font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                                    <i class="fa fa-pills" style="color: var(--text-muted); font-size: 0.7rem;"></i>
+                                    Sirohi Medical Store
+                                </div>
+                                <div style="font-size: 0.7rem; color: var(--text-muted);">Hospital Road</div>
+                            </td>
+                            <td><span style="font-size: 0.75rem; color: var(--text-muted);">Healthcare</span></td>
+                            <td><div style="font-size: 0.75rem;">+91 9123456780</div></td>
+                            <td><span class="status pending">Pending</span></td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn btn-approve" onclick="updateStatus(this, 'approved')"><i class="fa fa-check"></i></button>
+                                    <button class="btn btn-reject" onclick="openRejectModal('Sirohi Medical Store')"><i class="fa fa-x"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-name="Bright Coaching Center">
+                            <td>
+                                <div style="font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                                    <i class="fa fa-graduation-cap" style="color: var(--text-muted); font-size: 0.7rem;"></i>
+                                    Bright Coaching Center
+                                </div>
+                                <div style="font-size: 0.7rem; color: var(--text-muted);">Shivganj Road</div>
+                            </td>
+                            <td><span style="font-size: 0.75rem; color: var(--text-muted);">Education</span></td>
+                            <td><div style="font-size: 0.75rem;">+91 9988776655</div></td>
+                            <td><span class="status approved">Active</span></td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn btn-view" onclick="viewBusiness('Bright Coaching Center')">Details</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Activity Feed -->
+            <aside class="activity-feed" id="activityFeed">
+                <h3><i class="fa fa-bolt" style="color: var(--warning);"></i> Live Activity</h3>
+                <div id="feedList">
+                    <div class="feed-item">
+                        <div class="feed-icon" style="background: #e0e7ff; color: var(--primary);"><i class="fa fa-user-plus"></i></div>
+                        <div class="feed-info">
+                            <p><strong>System</strong> started session</p>
+                            <span>Just now</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+</div>
+
+<!-- Rejection Modal -->
+<div class="modal-overlay" id="rejectModal">
+    <div class="modal">
+        <h3 id="modalTitle">Reject Business</h3>
+        <p style="color: var(--text-muted); font-size: 0.8rem; margin: 10px 0;">Please provide a reason for rejecting this application.</p>
+        <textarea class="textarea" id="rejectReason" placeholder="Describe the issue (e.g. invalid documents)..."></textarea>
+        <div class="modal-footer">
+            <button class="btn btn-view" onclick="closeModal()">Cancel</button>
+            <button class="btn btn-approve" style="background: var(--danger);" onclick="confirmRejection()">Confirm Reject</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    let currentBusinessRow = null;
+
+    // Search Feature
+    document.getElementById('searchInput').addEventListener('input', function() {
+        const filter = this.value.toLowerCase();
+        const rows = document.querySelectorAll('#tableBody tr');
+        rows.forEach(row => {
+            const text = row.innerText.toLowerCase();
+            row.style.display = text.includes(filter) ? '' : 'none';
+        });
+    });
+
+    // New Feature: Add Business Manually
+    function addNewBusiness() {
+        const name = document.getElementById('newBizName').value;
+        const cat = document.getElementById('newBizCat').value;
+        const owner = document.getElementById('newBizOwner').value;
+        const contact = document.getElementById('newBizContact').value;
+
+        if(!name || !owner || !contact) {
+            showToast("Please fill all fields");
+            return;
+        }
+
+        const tableBody = document.getElementById('tableBody');
+        const newRow = document.createElement('tr');
+        newRow.setAttribute('data-name', name);
+        
+        const catIcons = {
+            'Restaurant': 'fa-utensils',
+            'Healthcare': 'fa-pills',
+            'Education': 'fa-graduation-cap',
+            'Retail': 'fa-shopping-bag',
+            'Service': 'fa-wrench'
+        };
+        const icon = catIcons[cat] || 'fa-store';
+
+        newRow.innerHTML = `
+            <td>
+                <div style="font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                    <i class="fa ${icon}" style="color: var(--text-muted); font-size: 0.7rem;"></i>
+                    ${name}
+                </div>
+                <div style="font-size: 0.7rem; color: var(--text-muted);">Admin Entry (${owner})</div>
+            </td>
+            <td><span style="font-size: 0.75rem; color: var(--text-muted);">${cat}</span></td>
+            <td><div style="font-size: 0.75rem;">${contact}</div></td>
+            <td><span class="status approved">Active</span></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-view" onclick="viewBusiness('${name}')">Details</button>
+                </div>
+            </td>
+        `;
+
+        tableBody.prepend(newRow);
+        addToFeed('Registered Manually', name, 'approved');
+        showToast(`Registered: ${name}`);
+
+        // Update Stats
+        document.getElementById('stat-total').innerText = parseInt(document.getElementById('stat-total').innerText) + 1;
+        document.getElementById('stat-live').innerText = parseInt(document.getElementById('stat-live').innerText) + 1;
+
+        // Clear Form
+        document.getElementById('newBizName').value = '';
+        document.getElementById('newBizOwner').value = '';
+        document.getElementById('newBizContact').value = '';
+    }
+
+    // Add to Activity Feed
+    function addToFeed(action, businessName, type) {
+        const feedList = document.getElementById('feedList');
+        const item = document.createElement('div');
+        item.className = 'feed-item';
+        
+        const icon = type === 'approved' ? 'fa-check' : 'fa-x';
+        const color = type === 'approved' ? '#dcfce7' : '#fee2e2';
+        const iconColor = type === 'approved' ? '#166534' : '#991b1b';
+
+        item.innerHTML = `
+            <div class="feed-icon" style="background: ${color}; color: ${iconColor};"><i class="fa ${icon}"></i></div>
+            <div class="feed-info">
+                <p><strong>${businessName}</strong> ${action}</p>
+                <span>${new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
+            </div>
+        `;
+        feedList.prepend(item);
+    }
+
+    // Update Status Logic
+    function updateStatus(btn, type) {
+        const row = btn.closest('tr');
+        const name = row.getAttribute('data-name');
+        const statusCell = row.cells[3];
+        
+        if(type === 'approved') {
+            statusCell.innerHTML = '<span class="status approved">Active</span>';
+            const btnGroup = row.querySelector('.btn-group');
+            btnGroup.innerHTML = `<button class="btn btn-view" onclick="viewBusiness('${name}')">Details</button>`;
+            addToFeed('was Approved', name, 'approved');
+            
+            // Update counts
+            document.getElementById('stat-pending').innerText = Math.max(0, parseInt(document.getElementById('stat-pending').innerText) - 1);
+            document.getElementById('stat-live').innerText = parseInt(document.getElementById('stat-live').innerText) + 1;
+        }
+    }
+
+    // Modal Controls
+    function openRejectModal(name) {
+        const rows = document.querySelectorAll('#tableBody tr');
+        rows.forEach(r => { if(r.getAttribute('data-name') === name) currentBusinessRow = r; });
+        document.getElementById('modalTitle').innerText = `Reject ${name}`;
+        document.getElementById('rejectModal').style.display = 'flex';
+    }
+
+    function closeModal() {
+        document.getElementById('rejectModal').style.display = 'none';
+        document.getElementById('rejectReason').value = '';
+    }
+
+    function confirmRejection() {
+        if(currentBusinessRow) {
+            const name = currentBusinessRow.getAttribute('data-name');
+            currentBusinessRow.cells[3].innerHTML = '<span class="status rejected">Rejected</span>';
+            currentBusinessRow.querySelector('.btn-group').innerHTML = `<button class="btn btn-view" onclick="viewBusiness('${name}')">History</button>`;
+            addToFeed('was Rejected', name, 'rejected');
+            
+            // Update counts
+            document.getElementById('stat-pending').innerText = Math.max(0, parseInt(document.getElementById('stat-pending').innerText) - 1);
+            
+            closeModal();
+        }
+    }
+
+    function showToast(msg) {
+        const toast = document.createElement('div');
+        toast.style = "position: fixed; top: 20px; right: 20px; background: #1e293b; color: #fff; padding: 10px 20px; border-radius: 8px; z-index: 5000; font-size: 0.8rem; box-shadow: 0 10px 15px rgba(0,0,0,0.1);";
+        toast.innerText = msg;
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 2000);
+    }
+
+    function viewBusiness(name) {
+        showToast(`Opening profile: ${name}`);
+    }
+</script>
+
+</body>
+</html>

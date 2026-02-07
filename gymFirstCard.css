@@ -62,7 +62,7 @@ ul a i {
 /* HEADER */
 .shop-header {
   /* background: linear-gradient(135deg, #d9ebff, #22c55e); */
-  background: linear-gradient(135deg, #017cff, #b1d7ff);
+  background: white;
   padding: 40px 20px;
   max-width: 93%;
   margin-top: 0;
@@ -103,12 +103,12 @@ ul a i {
 }
 .shop-info h1 {
   font-size: 30px;
-  color: #fff;
+  color: #333;
 }
 .shop-info p {
   font-size: 14px;
   margin-top: 6px;
-  color: #fff;
+  color: #333;
 }
 .rating-badge {
   display: inline-block;
@@ -129,18 +129,23 @@ ul a i {
 }
 .actions button {
   padding: 10px 16px;
-  border-radius: 12px;
+  border-radius: 5px;
   border: none;
   cursor: pointer;
   font-size: 14px;
 }
 .call {
-  background: #020617;
+  background: #22c55e;
   color: #fff;
 }
 .whatsapp {
-  background: #22c55e;
-  color: white;
+  background: black;
+  color: #fff;
+  border: 1px solid #22c55e;
+}
+
+.whatsapp i {
+  color: #22c55e;
 }
 .join {
   background: white;
