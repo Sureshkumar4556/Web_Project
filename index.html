@@ -24,6 +24,13 @@
                 <a href="Login.html" class="btn login" target="_blank">Login</a>
             </ul>
             <div class="menu-toggle">&#9776;</div>
+            <ul class="nav-menu">
+                <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+                <a href="places.html">Places</a>
+                <a href="aboutPage.html">About Us</a>
+                <a href="contactPage.html">Contact Us</a>
+                <a href="Login.html" class="btn login" target="_blank">Login</a>
+            </ul>
         </nav>
 
         <section class="upper-section">
@@ -81,27 +88,23 @@
                 <div class="tray-one">
                     <div class="item-box">
                         <div class="logo-item">
-                            <img src="weightlifting.png" alt="GYM" class="logo" onclick="openGymPage()">
-                            <div class="logo-name">GYM</div>
-                        </div>
-                        <div class="logo-item">
                             <img src="medic.png" alt="Hospital" class="logo" onclick="openHospitalPage()">
                             <div class="logo-name">Hospitals</div>
                         </div>
                         <div class="logo-item">
-                            <img src="mentoring.png" alt="Coaching" class="logo" onclick="openCoachingPage()">
-                            <div class="logo-name">Coaching Centers</div>
+                            <img src="weightlifting.png" alt="GYM" class="logo" onclick="openGymPage()">
+                            <div class="logo-name">GYM</div>
                         </div>
                         <div class="logo-item">
                             <img src="shoes (1).png" alt="Footware" class="logo" onclick="openFootwarePage()">
                             <div class="logo-name">Footware Shops</div>
                         </div>
+                    </div>
+                    <div class="item-box">
                         <div class="logo-item">
                             <img src="restaurant (1).png" alt="Restaurent" class="logo" onclick="openRestaurentPage()">
                             <div class="logo-name">Restaurent</div>
                         </div>
-                    </div>
-                    <div class="item-box">
                         <div class="logo-item">
                             <img src="online-shopping.png" alt="Shopping" class="logo" onclick="openGroceryPage()">
                             <div class="logo-name">Grocery Stores</div>
@@ -114,37 +117,21 @@
                             <img src="iphone.png" alt="Mobile" class="logo" onclick="openMobilePage()">
                             <div class="logo-name">Mobile Shops</div>
                         </div>
-                        <div class="logo-item">
-                            <img src="electronics.png" alt="Electronics" class="logo" onclick="openElectronicsPage()">
-                            <div class="logo-name">Electronics Shops</div>
-                        </div>
-                        <div class="logo-item">
-                            <img src="settings.png" alt="Hardware" class="logo" onclick="openHardwarePage()">
-                            <div class="logo-name">Hardware & Paints</div>
-                        </div>
                     </div>
                 </div>
                 <div class="tray-two">
                     <div class="item-box">
                         <div class="logo-item">
-                            <img src="technician.png" alt="Technician" class="logo" onclick="openGaragesPage()">
-                            <div class="logo-name">Garages</div>
+                            <img src="electronics.png" alt="Electronics" class="logo" onclick="openElectronicsPage()">
+                            <div class="logo-name">Electronics Shops</div>
                         </div>
                         <div class="logo-item">
                             <img src="education.png" alt="Study" class="logo" onclick="openSchool_clsPage()">
                             <div class="logo-name">Schools & Colleges</div>
                         </div>
                         <div class="logo-item">
-                            <img src="spa (1).png" alt="Spa" class="logo" onclick="openBeautyPage()">
-                            <div class="logo-name">Beauty Spa</div>
-                        </div>
-                        <div class="logo-item">
                             <img src="box.png" alt="Stationary" class="logo" onclick="openStationaruPage()">
                             <div class="logo-name">Stationary</div>
-                        </div>
-                        <div class="logo-item">
-                            <img src="accomodation.png" alt="Hostel" class="logo" onclick="openPg_hostelPage()">
-                            <div class="logo-name">PGs & Hostels</div>
                         </div>
                     </div>
                     <div class="item-box">
@@ -163,10 +150,6 @@
                         <div class="logo-item">
                             <img src="delivery-man.png" alt="Delivery" class="logo" onclick="openCourierPage()">
                             <div class="logo-name">Courier & Logistics</div>
-                        </div>
-                        <div class="logo-item">
-                            <img src="add.png" alt="More" class="logo" id="more">
-                            <div class="logo-name">More</div>
                         </div>
                     </div>
                     <div id="tray" class="tray">
@@ -519,6 +502,13 @@
         }
 
         setInterval(nextSlide, 4000);
+
+        const toggleBtn = document.querySelector('.manu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        toggleBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
     </script>
     <script src="script.js?v=2"></script>
 </body>
